@@ -1,5 +1,4 @@
 :root {
-  --max-width: 1100px;
   --border-radius: 12px;
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
@@ -40,39 +39,6 @@
   --card-border-rgb: 131, 134, 135;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-
-    --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
-    --secondary-glow: linear-gradient(
-      to bottom right,
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0.3)
-    );
-
-    --tile-start-rgb: 2, 13, 46;
-    --tile-end-rgb: 2, 5, 19;
-    --tile-border: conic-gradient(
-      #ffffff80,
-      #ffffff40,
-      #ffffff30,
-      #ffffff20,
-      #ffffff10,
-      #ffffff10,
-      #ffffff80
-    );
-
-    --callout-rgb: 20, 20, 20;
-    --callout-border-rgb: 108, 108, 108;
-    --card-rgb: 100, 100, 100;
-    --card-border-rgb: 200, 200, 200;
-  }
-}
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -81,7 +47,6 @@
 
 html,
 body {
-  max-width: 100vw;
   overflow-x: hidden;
 }
 
@@ -99,9 +64,135 @@ a {
   color: inherit;
   text-decoration: none;
 }
+.image{
+  object-fit: contain;
+  width: 100% !important;
+  position: relative !important;
+}
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+/* Styles for this project */
+.Header
+{
+  background-color: white;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 3% 2%;
+  margin-bottom: 10%;
+  border-bottom: solid;
+  border-width: 1px;
+  border-color: rgb(214, 213, 213);
+  box-shadow: 0px 5px 5px rgb(165, 163, 163);
+}
+.logo
+{
+  margin: 0 2%;
+  width: 15%;
+}
+.lupa
+{
+  width: 25%;
+  cursor: pointer;
+}
+.burger
+{
+  width: 8%;
+  cursor: pointer;
+  margin-left: 40%;
+  margin-right: 25%;
+}
+.nameAndLogo
+{
+  cursor: pointer;
+  width: 35%;
+  align-items: center;
+  display: flex;
+  justify-content: left;
+}
+.nameAndLogo h1
+{
+  padding-left: 8%;
+}
+.searchAndBurger
+{
+  width: 18%;
+  align-items: center;
+  display: flex;
+  justify-content: right;
+}
+.blurBack
+{
+  background-color: rgba(165, 159, 159, 0.421);
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+}
+.menu
+{
+  padding: 15% 5%;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  height: 100vh;
+  width: 60vw;
+  animation-name: left-right;
+  animation-duration: 1s;
+}
+.row
+{
+  cursor: pointer;
+  text-align: center;
+  width: 90%;
+  display: flex;
+  justify-content: left;
+  padding: 2% 0;
+  margin: 4% 0;
+}
+.row p{
+  padding-left: 5%;
+}
+@keyframes left-right {
+  0%
+  {
+    left: -50%;
   }
+  100%
+  {
+    left: 0%;
+  }
+}
+
+.Preview{
+  display: flex;
+  background-color: white;
+  width: 95%;
+  margin: 5% 2.5%;
+  border: solid;
+  border-color: rgb(206, 204, 204);
+  box-shadow: 0px 0px 5px rgb(183, 182, 182);
+  border-width: 1px;
+}
+
+.imagePreview
+{
+  width: 30%;
+}
+.annoncInfo
+{
+  width: 75%;
+  padding: 2% 4%;
+}
+.annoncInfo p
+{
+  margin: 5% 0;
+}
+.price
+{
+  padding-top: 5%;
+  margin-bottom: 0;
+  color: rgb(16, 125, 16);
 }
