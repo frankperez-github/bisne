@@ -1,15 +1,16 @@
 import Image from "next/image";
+import Link from "next/link";
 
 function Header ()
 {
     return(
         <div className="Header">
-            <a href="/" className="nameAndLogo">
+            <Link href="/" className="nameAndLogo">
                 <div className="logo">
                     <Image className="image" src="/lupa.svg" alt="logo" fill/>
                 </div>
                 <h1>El Bisne</h1>
-            </a>
+            </Link>
             
             <div className="searchAndBurger">
                 <a href="" className="lupa">
