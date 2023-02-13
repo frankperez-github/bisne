@@ -1,8 +1,7 @@
 import { createContext, useState } from "react";
+export const AnnouncementsContext = createContext();
 
-const Context = createContext();
-
-export const ContextProvider = ({children})=>{
+const AnnouncementsContextProvider = ({children})=>{
 
     const[menu, setMenu] = useState(false);
 
@@ -25,14 +24,30 @@ export const ContextProvider = ({children})=>{
         }
     ]
 
-    return <Context.Provider 
+    const [results, setResults] = useState([]);
+    
+    function Search(query)
+    {
+        var newResults=[]
+        announcements.map(announc => {
+            if(announc.name.includes(query)){
+                newResults=[announc, ...newResults];
+            }
+        });
+        setResults(newResults);
+        console.log(query);
+    }
+    return (
+    <AnnouncementsContext.Provider 
     value={{
         menu,
         setMenu,
-        announcements
+        announcements,
+        Search,
+        results,
     }}>
         {children}
-    </Context.Provider>
-
+    </AnnouncementsContext.Provider>
+    );
 }
-export default Context;
+export default AnnouncementsContextProvider;

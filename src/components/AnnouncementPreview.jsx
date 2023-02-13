@@ -1,3 +1,5 @@
+import { getToPathname } from "@remix-run/router";
+import Link from "next/link";
 
 function AnnouncementPreview({announcement})
 {
@@ -12,15 +14,17 @@ function AnnouncementPreview({announcement})
       width: '40%'
     }
     return(
+        <Link href={`/Announcement/?id=${announcement.id}`}>
         <div className="Preview">
-            <div className="imagePreview" style={imagePreview}>
-            </div>
-            <div className="annoncInfo">
-                <h3 className="name">{announcement.name}</h3>
-                <p className="description">{announcement.description}</p>
-                <p className="price">$ {announcement.price} {announcement.currency}</p>
-            </div>
+                <div className="imagePreview" style={imagePreview}>
+                </div>
+                <div className="announcInfo">
+                    <h3 className="name">{announcement.name}</h3>
+                    <p className="description">{announcement.description}</p>
+                    <p className="price">$ {announcement.price} {announcement.currency}</p>
+                </div>
         </div>
+        </Link>
     );
 }
 export default AnnouncementPreview;

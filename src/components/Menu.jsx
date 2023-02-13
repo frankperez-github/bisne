@@ -1,4 +1,4 @@
-import Context from "@/context/Context";
+import Context from "@/context/AnnouncementsContext";
 import Image from "next/image";
 import { useContext } from "react";
 

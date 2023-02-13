@@ -3,14 +3,13 @@ import styles from '@/styles/Home.module.css'
 import Menu from '@/components/Menu'
 import Search from './Search'
 import Gallery from './Gallery'
-import { useState } from "react";
+import React, { useState } from "react";
 import { Routes, BrowserRouter as Router, Route } from 'react-router-dom'
-import { ContextProvider } from '@/context/Context'
+import Announcement from './Announcement'
+import AnnouncementsContextProvider from '@/context/AnnouncementsContext'
 
 
 export default function Home() {
-  
-  const[menu, setMenu] = useState(false);
   
   return (
     <>
@@ -21,17 +20,20 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       
-      <ContextProvider>
-        <Router>
-            <main className={styles.main}>
+      <React.StrictMode>
+        <AnnouncementsContextProvider>
+          <main className={styles.main}>
             <Menu/>
-            <Routes>
-              <Route exact path='/' element={<Gallery />}/>
-              <Route exact path='/Search' element={<Search/>} />
-            </Routes>
-            </main>
-        </Router>
-      </ContextProvider>
+            <Router>
+              <Routes>
+                <Route exact path='/' element={<Gallery />}/>
+                <Route exact path='/Search' element={<Search/>} />
+                <Route  path='/Announcement/:id' element={<Announcement />} />
+              </Routes>
+            </Router>
+          </main>
+        </AnnouncementsContextProvider>
+      </React.StrictMode>
     </>
   )
 }

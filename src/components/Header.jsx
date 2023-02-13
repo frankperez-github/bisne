@@ -1,11 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
-import Context from "@/context/Context";
+import Context from "@/context/AnnouncementsContext";
 import { useContext } from "react";
 
 function Header ()
 {
     const {setMenu} = useContext(Context);
+    
     return(
         <div className="Header">
             <Link href="/" className="nameAndLogo">

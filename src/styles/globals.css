@@ -164,6 +164,7 @@ a {
 }
 
 .Preview{
+  cursor: pointer;
   display: flex;
   background-color: white;
   width: 95%;
@@ -174,12 +175,12 @@ a {
   border-width: 1px;
 }
 
-.annoncInfo
+.announcInfo
 {
   width: 75%;
   padding: 2% 4%;
 }
-.annoncInfo p
+.announcInfo p
 {
   margin: 5% 0;
 }
@@ -190,6 +191,38 @@ a {
   color: rgb(16, 125, 16);
 }
 
+.nameAndLogo p{
+  text-align: center;
+  margin-bottom: 2%;
+  margin-left: 10%;
+}
+.SearchBar
+{
+  display: flex;
+  justify-content: left;
+  width: 80%;
+  margin: 5% 10%
+}
+.searchInput
+{
+  text-align: center;
+  padding: 0% 2%;
+  background-color: rgba(89, 88, 88, 0);
+  border: none;
+  border-bottom: solid;
+  border-block-width: 1px;
+  border-color: gray;
+  width: 100%;
+}
+input:focus
+{
+  outline: none;
+}
+.lupaBar
+{
+  width: 5%;
+  margin-right: 2%;
+}
 @media (max-width:500px) {
   h1{
     font-size: 30px;
@@ -197,10 +230,10 @@ a {
   h2{
     font-size: 25px;
   }
-  h3, input{
+  h3{
     font-size: 20px;
   }
-  p, a, button{
+  p, a, button,input{
     font-size: 15px;
   }
 }
@@ -212,10 +245,10 @@ a {
   h2{
     font-size: 15px;
   }
-  h3, input{
+  h3{
     font-size: 12px;
   }
-  p, a, button
+  p, a, button, input
   {
     font-size: 10px;
   }
