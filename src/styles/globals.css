@@ -38,26 +38,22 @@
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
 }
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap');
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
 }
-
+p{
+  font-family: 'Raleway', sans-serif;
+}
 html,
 body {
+  background-color: rgb(215, 215, 215);
   overflow-x: hidden;
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
 }
 
 a {
@@ -100,7 +96,7 @@ a {
   width: 8%;
   cursor: pointer;
   margin-left: 40%;
-  margin-right: 25%;
+  margin-right: 20%;
 }
 .nameAndLogo
 {
@@ -131,6 +127,7 @@ a {
 }
 .menu
 {
+  z-index: 3;
   padding: 15% 5%;
   display: flex;
   flex-direction: column;
@@ -177,10 +174,6 @@ a {
   border-width: 1px;
 }
 
-.imagePreview
-{
-  width: 30%;
-}
 .annoncInfo
 {
   width: 75%;
@@ -192,7 +185,38 @@ a {
 }
 .price
 {
-  padding-top: 5%;
+  padding-top: 10%;
   margin-bottom: 0;
   color: rgb(16, 125, 16);
+}
+
+@media (max-width:500px) {
+  h1{
+    font-size: 30px;
+  }
+  h2{
+    font-size: 25px;
+  }
+  h3, input{
+    font-size: 20px;
+  }
+  p, a, button{
+    font-size: 15px;
+  }
+}
+@media (max-width: 420px) {
+  
+  h1{
+    font-size: 20px;
+  }
+  h2{
+    font-size: 15px;
+  }
+  h3, input{
+    font-size: 12px;
+  }
+  p, a, button
+  {
+    font-size: 10px;
+  }
 }

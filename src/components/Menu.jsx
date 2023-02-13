@@ -1,15 +1,20 @@
+import Context from "@/context/Context";
 import Image from "next/image";
+import { useContext } from "react";
 
 function Menu() 
 {
+    const{setMenu, menu} = useContext(Context);
     return(
+        
+        menu && 
         <div className="SideMenu">
-            <div className="blurBack"></div>
+            <div className="blurBack" onClick={()=>setMenu(false)}></div>
 
             <div className="menu">
-                <a className="row">
-                    <Image  src="backArrow.svg" width={20} height={20} />
-                </a>
+                <div className="row">
+                    <Image onClick={()=>setMenu(false)} src="backArrow.svg" width={20} height={20} />
+                </div>
                 <a className="row">
                     <Image  src="cart.svg" width={20} height={20} />
                     <p>Categorias</p>
@@ -37,6 +42,7 @@ function Menu()
 
             </div>
         </div>
+        
     );
 }
 export default Menu;
