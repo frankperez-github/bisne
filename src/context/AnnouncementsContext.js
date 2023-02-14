@@ -1,7 +1,7 @@
 import { createContext, useState } from "react";
-export const AnnouncementsContext = createContext();
+const AnnouncementsContext = createContext();
 
-const AnnouncementsContextProvider = ({children})=>{
+export const AnnouncementsContextProvider = ({children})=>{
 
     const[menu, setMenu] = useState(false);
 
@@ -24,30 +24,36 @@ const AnnouncementsContextProvider = ({children})=>{
         }
     ]
 
-    const [results, setResults] = useState([]);
+    const [results, setResults] = useState(null);
     
     function Search(query)
     {
-        var newResults=[]
-        announcements.map(announc => {
-            if(announc.name.includes(query)){
-                newResults=[announc, ...newResults];
-            }
-        });
-        setResults(newResults);
-        console.log(query);
+        if(query!== ""){
+
+            var newResults=[]
+            announcements.map(announc => {
+                if(announc.name.toLowerCase().includes(query.toLowerCase()) || 
+                    announc.description.toLowerCase().includes(query.toLowerCase())){
+                    newResults=[announc, ...newResults];
+                }
+            });
+            if(newResults.length > 0) setResults(newResults);
+            else setResults(null)
+        }
     }
     return (
     <AnnouncementsContext.Provider 
-    value={{
-        menu,
-        setMenu,
-        announcements,
-        Search,
-        results,
-    }}>
+        value={{
+            menu,
+            setMenu,
+            announcements,
+            Search,
+            results,
+        }}>
+
         {children}
+        
     </AnnouncementsContext.Provider>
     );
 }
-export default AnnouncementsContextProvider;
+export default AnnouncementsContext;

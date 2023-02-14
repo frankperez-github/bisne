@@ -1,10 +1,10 @@
-import Context from "@/context/AnnouncementsContext";
+import AnnouncementsContext from "@/context/AnnouncementsContext";
 import Image from "next/image";
 import { useContext } from "react";
 
 function Menu() 
 {
-    const{setMenu, menu} = useContext(Context);
+    const{setMenu, menu} = useContext(AnnouncementsContext);
     return(
         
         menu && 

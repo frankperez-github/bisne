@@ -10,7 +10,9 @@ function Announcement()
     const {id} = router.query
 
     return(
-        <Link href="/">{announcements[id-1].name}</Link>
+        <div className="Announcement">
+            {id}
+        </div>
     );
 }
 export default Announcement;

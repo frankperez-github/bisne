@@ -1,13 +1,8 @@
 import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
 import Menu from '@/components/Menu'
-import Search from './Search'
-import Gallery from './Gallery'
-import React, { useState } from "react";
-import { Routes, BrowserRouter as Router, Route } from 'react-router-dom'
-import Announcement from './Announcement'
-import AnnouncementsContextProvider from '@/context/AnnouncementsContext'
-
+import React from "react";
+import Gallery from '@/pages/Gallery';
 
 export default function Home() {
   
@@ -21,18 +16,10 @@ export default function Home() {
       </Head>
       
       <React.StrictMode>
-        <AnnouncementsContextProvider>
           <main className={styles.main}>
             <Menu/>
-            <Router>
-              <Routes>
-                <Route exact path='/' element={<Gallery />}/>
-                <Route exact path='/Search' element={<Search/>} />
-                <Route  path='/Announcement/:id' element={<Announcement />} />
-              </Routes>
-            </Router>
+            <Gallery />
           </main>
-        </AnnouncementsContextProvider>
       </React.StrictMode>
     </>
   )

@@ -1,15 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
-import Context from "@/context/AnnouncementsContext";
-import { useContext, useEffect } from "react";
+import AnnouncementsContext from "@/context/AnnouncementsContext";
+import { useContext } from "react";
+import AnnouncementPreview from "@/components/AnnouncementPreview";
 
 function Search() {
 
-    // const {setMenu, Search} = useContext(Context) || {};
+    const { setMenu, Search, results } = useContext(AnnouncementsContext);
 
     const handleChange = (event) =>
     {
-        Search(event.target.value);
+        Search(event.target.value)
     }
 
     return(
@@ -37,7 +38,10 @@ function Search() {
             </div>
 
             <div className="SearchResults">
-                <Link href="/">hey there</Link>
+                {results === null 
+                    ? <h4>Not announcements founded</h4>
+                    : results.map((result)=><AnnouncementPreview key={result.id} announcement={result}/>)
+                }
             </div>
         </div>
     );

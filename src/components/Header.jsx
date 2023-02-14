@@ -1,11 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
-import Context from "@/context/AnnouncementsContext";
+import AnnouncementsContext from "@/context/AnnouncementsContext";
 import { useContext } from "react";
+
 
 function Header ()
 {
-    const {setMenu} = useContext(Context);
+    const { setMenu } = useContext(AnnouncementsContext);
     
     return(
         <div className="Header">

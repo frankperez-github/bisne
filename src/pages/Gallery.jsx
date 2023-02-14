@@ -1,11 +1,11 @@
 import AnnouncementPreview from "@/components/AnnouncementPreview";
 import Header from "@/components/Header";
-import Context from "@/context/AnnouncementsContext";
+import AnnouncementsContext from "@/context/AnnouncementsContext";
 import { useContext } from "react";
 
 function Gallery() {
     
-    const {announcements} = useContext(Context);
+    const { announcements } = useContext(AnnouncementsContext);
 
     return(
         <div className="">

@@ -1,4 +1,3 @@
-import { getToPathname } from "@remix-run/router";
 import Link from "next/link";
 
 function AnnouncementPreview({announcement})
