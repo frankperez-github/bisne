@@ -1,5 +1,6 @@
 import AnnouncementPreview from "@/components/AnnouncementPreview";
 import Header from "@/components/Header";
+import Menu from "@/components/Menu";
 import AnnouncementsContext from "@/context/AnnouncementsContext";
 import { useContext } from "react";
 
@@ -9,6 +10,7 @@ function Gallery() {
 
     return(
         <div className="">
+            <Menu />
             <Header />
             {
                 announcements.map((announc) => (

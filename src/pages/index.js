@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
-import Menu from '@/components/Menu'
 import React from "react";
 import Gallery from '@/pages/Gallery';
 
@@ -17,7 +16,6 @@ export default function Home() {
       
       <React.StrictMode>
           <main className={styles.main}>
-            <Menu/>
             <Gallery />
           </main>
       </React.StrictMode>

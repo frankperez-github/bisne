@@ -4,6 +4,7 @@ const AnnouncementsContext = createContext();
 export const AnnouncementsContextProvider = ({children})=>{
 
     const[menu, setMenu] = useState(false);
+    const menuIcons = ["cart.svg", "star.svg", "edit.svg", "paper.svg", "person.svg", "stonks.svg"];
 
     const announcements = [
         {
@@ -12,7 +13,8 @@ export const AnnouncementsContextProvider = ({children})=>{
             description: "Laptop en perfecto estado, solo tiene detalles, le falta la pantalla y el teclado",
             price: 5000,
             currency: "USD",
-            previewImage: "/announcPreview.png"
+            previewImage: "/announcPreview.png",
+            phone: "+5353103058"
         },
         {
             id: 2,
@@ -20,7 +22,8 @@ export const AnnouncementsContextProvider = ({children})=>{
             description: "Laptop en perfecto estado, solo tiene detalles, le falta la pantalla y el teclado",
             price: 5000,
             currency: "USD",
-            previewImage: "/announcPreview.png"
+            previewImage: "/announcPreview.png",
+            phone: "+5353103058"
         }
     ]
 
@@ -28,7 +31,7 @@ export const AnnouncementsContextProvider = ({children})=>{
     
     function Search(query)
     {
-        if(query!== ""){
+        if(query !== ""){
 
             var newResults=[]
             announcements.map(announc => {
@@ -49,6 +52,7 @@ export const AnnouncementsContextProvider = ({children})=>{
             announcements,
             Search,
             results,
+            menuIcons
         }}>
 
         {children}
