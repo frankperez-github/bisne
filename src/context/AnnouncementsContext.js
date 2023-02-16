@@ -13,7 +13,9 @@ export const AnnouncementsContextProvider = ({children})=>{
             description: "Laptop en perfecto estado, solo tiene detalles, le falta la pantalla y el teclado",
             price: 5000,
             currency: "USD",
-            previewImage: "/announcPreview.png",
+            images: [
+                "/announcPreview.png"
+            ],
             phone: "+5353103058",
             category:"Compra y Venta"
         },
@@ -23,7 +25,9 @@ export const AnnouncementsContextProvider = ({children})=>{
             description: "Laptop en perfecto estado, solo tiene detalles, le falta la pantalla y el teclado",
             price: 5000,
             currency: "USD",
-            previewImage: "/announcPreview.png",
+            images: [
+                "/announcPreview.png"
+            ],
             phone: "+5353103058",
             category:"Compra y Venta"
         }

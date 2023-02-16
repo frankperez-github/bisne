@@ -19,7 +19,7 @@ function Announcement()
             <Menu />
             <div className="container">
                 <div className="AnnouncementDetailedImages">
-                    <Image className="image" src={Announcement.previewImage} alt="" fill/>
+                    <Image className="image" src={Announcement.images[0]} alt="" fill/>
                 </div>
 
                 <h2 className="announcInfoLine">{Announcement.name}</h2>

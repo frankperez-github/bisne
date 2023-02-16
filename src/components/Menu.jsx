@@ -14,7 +14,7 @@ function Menu()
 
             <div className="menu">
                 <div className="row">
-                    <Image onClick={()=>setMenu(false)} src="backArrow.svg" width={20} height={20} />
+                    <Image onClick={()=>setMenu(false)} alt="" src="backArrow.svg" width={20} height={20} />
                 </div>
                 <Link href="/Categories" className="row" onClick={()=>setMenu(false)}>
                     <Image  src="cart.svg" alt="" width={20} height={20} />

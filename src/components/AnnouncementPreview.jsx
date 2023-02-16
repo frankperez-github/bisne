@@ -4,7 +4,7 @@ function AnnouncementPreview({announcement})
 {
     const imagePreview = 
     {
-      backgroundImage: `url(${announcement.previewImage})`,
+      backgroundImage: `url(${announcement.images[0]})`,
       backgroundColor: `rgb(117, 117, 250)`,
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat',
