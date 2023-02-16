@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import AnnouncementsContext from "@/context/AnnouncementsContext";
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import ReturnBar from "@/components/ReturnBar";
 import Menu from "@/components/Menu";
@@ -11,9 +11,14 @@ function Announcement()
     const {announcements} = useContext(AnnouncementsContext)
     const router = useRouter()
     const {id} = router.query
-    var Announcement = announcements[id-1];
+    const[Announcement, setAnnouncement] = useState();
+
+    useEffect(()=>(
+        setAnnouncement(announcements[id-1])
+    ),[])
 
     return(
+        Announcement !== undefined &&
         <div className="Announcement">
             <ReturnBar />
             <Menu />
