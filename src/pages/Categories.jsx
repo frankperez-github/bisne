@@ -34,7 +34,7 @@ function Categories ()
             <Titlebar icon={menuIcons[0]} title={"Categorias"}/> 
 
             {Categories.map((category)=>(
-                <CategoryRow id={category.id} name={category.name} changeCateg={ChangeCateg} setId={setId}/>
+                <CategoryRow key={category.id} id={category.id} name={category.name} changeCateg={ChangeCateg} setId={setId}/>
             ))}
 
         </div>
