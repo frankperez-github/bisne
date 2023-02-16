@@ -14,7 +14,8 @@ export const AnnouncementsContextProvider = ({children})=>{
             price: 5000,
             currency: "USD",
             previewImage: "/announcPreview.png",
-            phone: "+5353103058"
+            phone: "+5353103058",
+            category:"Compra y Venta"
         },
         {
             id: 2,
@@ -23,7 +24,51 @@ export const AnnouncementsContextProvider = ({children})=>{
             price: 5000,
             currency: "USD",
             previewImage: "/announcPreview.png",
-            phone: "+5353103058"
+            phone: "+5353103058",
+            category:"Compra y Venta"
+        }
+    ]
+    
+    const Categories = [
+        {
+            id: 1,
+            name: "Compra y Venta",
+        },
+        {
+            id: 2,
+            name: "Servicios",
+        },
+        {
+            id: 3,
+            name: "Celulares",
+        },
+        {
+            id: 4,
+            name: "Portátiles",
+        },
+        {
+            id: 5,
+            name: "Computadoras",
+        },
+        {
+            id: 6,
+            name: "Consolas",
+        },
+        {
+            id: 7,
+            name: "Viviendas",
+        },
+        {
+            id: 8,
+            name: "Autos",
+        },
+        {
+            id: 9,
+            name: "Ofertas de Empleo",
+        },
+        {
+            id: 10,
+            name: "Otros",
         }
     ]
 
@@ -44,6 +89,22 @@ export const AnnouncementsContextProvider = ({children})=>{
             else setResults(null)
         }
     }
+
+    function filterCateg(category)
+    {
+        if(category !== ""){
+
+            var newResults=[]
+            announcements.map(announc => {
+                if(announc.category === category){
+                    newResults=[announc, ...newResults];
+                }
+            });
+            if(newResults.length > 0) setResults(newResults);
+            else setResults(null)
+        }
+    }
+
     return (
     <AnnouncementsContext.Provider 
         value={{
@@ -52,7 +113,9 @@ export const AnnouncementsContextProvider = ({children})=>{
             announcements,
             Search,
             results,
-            menuIcons
+            menuIcons,
+            Categories,
+            filterCateg
         }}>
 
         {children}

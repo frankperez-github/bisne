@@ -249,6 +249,41 @@ input:focus
   margin-right: 3%;
   width: 8%;
 }
+.categoryRow
+{
+  cursor: pointer;
+  background-color: white;
+  display: flex;
+  padding: 3% 14%;
+  margin-bottom: 0.2%;
+}
+.colorDot
+{
+  margin-right: 5%;
+  width: 3%;
+}
+select
+{
+  margin-top: 0%;
+  padding: 3.5% 0;
+  padding-left: 19%;
+  border: none;
+  width: 100%;
+
+}
+.relativeDot
+{
+  position: relative;
+  margin-bottom: -7.5%;
+  margin-top: 3.7%;
+  margin-left: 15%;
+}
+.noCatg
+{
+  padding-top: 5%;
+  padding-left: 23% !important;
+}
+
 @media (max-width:500px) {
   h1{
     font-size: 30px;
@@ -259,7 +294,7 @@ input:focus
   h3{
     font-size: 20px;
   }
-  p, a, button,input{
+  p, a, button,input, select{
     font-size: 15px;
   }
 }
@@ -274,7 +309,7 @@ input:focus
   h3{
     font-size: 12px;
   }
-  p, a, button, input
+  p, a, button, input, select
   {
     font-size: 10px;
   }
