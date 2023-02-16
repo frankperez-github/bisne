@@ -48,7 +48,7 @@ function Categories ()
                 </div>
                 <select name="" id="" onChange={handleChange}>
                     {Categories.map((categ)=>
-                    <option id={categ.id} value={categ.name}>{categ.name}</option>
+                    <option key={categ.id} id={categ.id} value={categ.name}>{categ.name}</option>
                     )}
                 </select>
 
