@@ -243,8 +243,11 @@ input:focus
 }
 .TitleBar
 {
+  background-color: white;
   align-items: center;
   display: flex;
+  margin-top: 0%;
+  margin-bottom: 2%;
   padding: 4% 0;
 }
 .titleIcon
@@ -287,6 +290,26 @@ select
   padding-top: 5%;
   padding-left: 23% !important;
 }
+.infoSections
+{
+  background-color: white;
+  height: 75vh;
+  padding: 5% 5%;
+}
+.infoText{
+  padding-bottom: 9%;
+}
+.siteButton
+{
+  background-color: green;
+  color: white;
+  border: none;
+  width: 40%;
+  padding: 1.8% 10%;
+  border-radius: 5em;
+}
+
+
 
 @media (max-width:500px) {
   h1{
