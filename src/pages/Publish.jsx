@@ -90,6 +90,8 @@ function Publish ()
 
                     <p>Descripcion</p>
                     <textarea name="descr" id="descr" cols="45" rows="10">Describe el producto o servicio de brindas</textarea>
+                            
+                    <button className="siteButton publishButton">Publicar</button>
                 </form>
             </div>
         </div>
