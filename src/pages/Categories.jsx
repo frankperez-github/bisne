@@ -40,7 +40,6 @@ function Categories ()
         : 
         <div className="">
             <ReturnBar />
-            <Menu />
                 <div className="colorDot relativeDot">
                     <Image src={`${id}.svg`} alt="" fill className="image"/>
                 </div>
