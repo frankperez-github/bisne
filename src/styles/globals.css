@@ -235,11 +235,29 @@ input:focus
   margin: 0% 3%;
   padding-bottom: 20%;
 }
+a
+{
+  text-decoration: underline;
+  color: blue;
+}
 .announcInfoLine
 {
   padding: 0% 5%;
-  padding-top: 5%;
+  margin-top: 5%;
   width: 90%;
+}
+.contact
+{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.contact p{
+  width: 21%;
+  padding-right: 0;
+}
+.contact a{
+  padding: 0;
 }
 .TitleBar
 {

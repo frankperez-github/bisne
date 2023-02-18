@@ -28,7 +28,11 @@ function Announcement()
                 
                 <p className="announcInfoLine">{Announcement.description}</p>
 
-                <a className="announcInfoLine" href={`tel:${Announcement.phone}`}>Contacto: {Announcement.phone}</a>
+                <br/>
+                <div className="contact">
+                    <p className="announcInfoLine">Contacto: </p>
+                    <a className="announcInfoLine" href={`tel:${Announcement.phone}`}>{Announcement.phone}</a>
+                </div>
 
                 <p className="price announcInfoLine">${Announcement.price} {Announcement.currency}</p>
             </div>
