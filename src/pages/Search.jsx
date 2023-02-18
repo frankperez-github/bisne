@@ -3,7 +3,6 @@ import { useContext } from "react";
 import AnnouncementsContext from "@/context/AnnouncementsContext";
 import AnnouncementPreview from "@/components/AnnouncementPreview";
 import ReturnBar from "@/components/ReturnBar";
-import Menu from "@/components/Menu";
 
 function Search() {
 
@@ -17,7 +16,6 @@ function Search() {
     return(
         <div className="Search">
             <ReturnBar />
-            <Menu />
             <div className="SearchBar">
                 <div className="lupaBar">
                     <Image className="image" src="/lupa.svg" alt="logo" fill/>

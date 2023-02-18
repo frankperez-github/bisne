@@ -1,6 +1,5 @@
 import { useContext } from "react";
 import AnnouncementsContext from "@/context/AnnouncementsContext";
-import Menu from "@/components/Menu";
 import ReturnBar from "@/components/ReturnBar";
 import Titlebar from "@/components/TitleBar";
 
@@ -45,8 +44,6 @@ function Publish ()
     return(
         <div className="">
             <ReturnBar />
-            <Menu />
-
             <Titlebar icon={"edit.svg"} title={"Publica tu anuncio"} />
 
             <div className="publishForm">
@@ -71,16 +68,22 @@ function Publish ()
                             <option key={municipio} value={municipio}>{municipio}</option>
                         ))}
                     </select>
-
-                    <p>Precio</p>
-                    <input type="text" placeholder="1100"/>
-
-                    <p>Moneda</p>
-                    <select name="currency" id="currency">
-                        <option value="USD">USD</option>
-                        <option value="CUP">CUP</option>
-                        <option value="MLC">MLC</option>
-                    </select>
+                    
+                    <div className="money">
+                        <div className="Price">
+                            <p>Precio</p>
+                            <input type="number" placeholder="1100"/>
+                        </div>
+                        
+                        <div className="Currency">
+                            <p>Moneda</p>
+                            <select name="currency" id="currency" className="currencySelect">
+                                <option value="USD">USD</option>
+                                <option value="CUP">CUP</option>
+                                <option value="MLC">MLC</option>
+                            </select>
+                        </div>
+                    </div>
 
                     <p>Título</p>
                     <input type="text" placeholder="Título del anuncio"/>

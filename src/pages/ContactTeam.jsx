@@ -1,11 +1,9 @@
-import Menu from "@/components/Menu";
 import ReturnBar from "@/components/ReturnBar";
 import Titlebar from "@/components/TitleBar";
 
 function ContactTeam() {
     return(
         <div className="">
-            <Menu />
             <ReturnBar />
             <Titlebar title={"Contactar Equipo"} icon={"/person.svg"}/>
             

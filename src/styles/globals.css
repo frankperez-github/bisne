@@ -308,7 +308,60 @@ select
   padding: 1.8% 10%;
   border-radius: 5em;
 }
-
+.publishForm
+{
+  padding: 5% 10%;
+  background-color: white;
+}
+.publishForm select, input, textarea
+{
+  width: 100%;
+  border: solid;
+  border-width: 1px;
+  margin-top: 2%;
+  padding: 1%;
+}
+.publishForm p
+{
+  margin-top: 5%;
+}
+.money
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4%;
+}
+.money input
+{
+  margin: 0% 0%;
+  margin-top: 5%;
+  width: 60%;
+}
+.money select
+{
+  margin-top: 5%;
+}
+.Price
+{
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 35%;
+}
+.currencySelect
+{
+  width: 30%;
+  margin-top: -5%;
+  margin-left: 5%;
+}
+.Currency
+{
+  align-items: center;
+  display: flex;
+  justify-content: left;
+  width: 50%;
+}
 
 
 @media (max-width:500px) {

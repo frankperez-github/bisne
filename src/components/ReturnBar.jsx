@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useContext } from "react";
 import AnnouncementsContext from "@/context/AnnouncementsContext";
+import Menu from "./Menu";
 
 function ReturnBar ()
 {
@@ -9,6 +10,7 @@ function ReturnBar ()
 
     return(
         <div className="Header">
+            <Menu />
             <Link href="/" className="nameAndLogo">
                 <div className="logo">
                     <Image className="image" src="/backArrow.svg" alt="logo" fill/>

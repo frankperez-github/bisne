@@ -1,4 +1,3 @@
-import Menu from "@/components/Menu";
 import ReturnBar from "@/components/ReturnBar";
 import Titlebar from "@/components/TitleBar";
 
@@ -6,7 +5,6 @@ function Promotion()
 {
     return(
         <div className="">
-            <Menu />
             <ReturnBar />
             <Titlebar icon={"stonks.svg"} title={"Promocionarse"}/>
 

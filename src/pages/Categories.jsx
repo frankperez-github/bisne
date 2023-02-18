@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { useContext, useState } from "react";
-import Menu from "@/components/Menu";
 import ReturnBar from "@/components/ReturnBar";
 import Titlebar from "@/components/TitleBar";
 import AnnouncementsContext from "@/context/AnnouncementsContext";
@@ -30,7 +29,6 @@ function Categories ()
         ?
         <div className="Categories">
             <ReturnBar />
-            <Menu />
             <Titlebar icon={menuIcons[0]} title={"Categorias"}/> 
 
             {Categories.map((category)=>(

@@ -1,10 +1,8 @@
-import Link from "next/link";
 import Image from "next/image";
 import AnnouncementsContext from "@/context/AnnouncementsContext";
 import { useContext, useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import ReturnBar from "@/components/ReturnBar";
-import Menu from "@/components/Menu";
 
 function Announcement()
 {
@@ -21,7 +19,6 @@ function Announcement()
         Announcement !== undefined &&
         <div className="Announcement">
             <ReturnBar />
-            <Menu />
             <div className="container">
                 <div className="AnnouncementDetailedImages">
                     <Image className="image" src={Announcement.images[0]} alt="" fill/>
