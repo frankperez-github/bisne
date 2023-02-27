@@ -1,11 +1,11 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import AnnouncementsContext from "@/context/AnnouncementsContext";
 import ReturnBar from "@/components/ReturnBar";
 import Titlebar from "@/components/TitleBar";
 
 function Publish ()
 {
-    const {Categories} = useContext(AnnouncementsContext);
+    const {Categories, setAnnouncements, announcements} = useContext(AnnouncementsContext);
     const Provinces = [
         "Pinar del Río",
         "Artemisa",
@@ -40,6 +40,32 @@ function Publish ()
         "San Miguel del Padrón",
         "Cotorro"
     ]
+    const[newAnn, setNewAnn] = useState("")
+
+    function CreateAnnouncement() {
+        var title = document.getElementById('AnnTitle')
+        var description = document.getElementById('AnnDescription')
+        var price = document.getElementById('AnnPrice')
+        var currency = document.getElementById('AnnCurrency')
+        var category = document.getElementById('AnnCategory')
+
+        const newAnnounc ={
+            "id": announcements.length+1,
+            "name": title.value,
+            "description": description.value,
+            "price": price.value,
+            "currency": currency.value,
+            "images": [
+                "/announcPreview.png"
+            ],
+            "phone": "+5353103058",
+            "category": category.value
+        }
+
+        // setAnnouncements([newAnnounc,...announcements])
+        setNewAnn(JSON.stringify(newAnnounc))
+        
+    }
     
     return(
         <div className="">
@@ -49,7 +75,7 @@ function Publish ()
             <div className="publishForm">
                 <form action="">
                     <p>Seleccione una categoria</p>
-                    <select name="" id="">
+                    <select name="" id="AnnCategory">
                         {Categories.map((category)=>(
                             <option key={category.id} value={category.name}>{category.name}</option>
                         ))}
@@ -72,12 +98,12 @@ function Publish ()
                     <div className="money">
                         <div className="Price">
                             <p>Precio</p>
-                            <input type="number" placeholder="1100"/>
+                            <input id="AnnPrice" type="number" placeholder="1100"/>
                         </div>
                         
                         <div className="Currency">
                             <p>Moneda</p>
-                            <select name="currency" id="currency" className="currencySelect">
+                            <select name="currency" id="AnnCurrency" className="currencySelect">
                                 <option value="USD">USD</option>
                                 <option value="CUP">CUP</option>
                                 <option value="MLC">MLC</option>
@@ -86,13 +112,13 @@ function Publish ()
                     </div>
 
                     <p>Título</p>
-                    <input type="text" placeholder="Título del anuncio"/>
+                    <input id="AnnTitle" type="text" placeholder="Título del anuncio"/>
 
                     <p>Descripcion</p>
-                    <textarea name="descr" id="descr" cols="45" rows="10">Describe el producto o servicio de brindas</textarea>
+                    <textarea id="AnnDescription" name="descr" cols="45" rows="10" placeholder="Describe el producto o servicio de brindas"></textarea>
                             
-                    <button className="siteButton publishButton">Publicar</button>
                 </form>
+                <a href={`https://api.whatsapp.com/send?phone=+53103058&text=${newAnn}`} className="siteButton publishButton" onClick={()=>CreateAnnouncement()}>Publicar</a>
             </div>
         </div>
     );

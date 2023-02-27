@@ -235,8 +235,7 @@ input:focus
   margin: 0% 3%;
   padding-bottom: 20%;
 }
-a
-{
+.contact a{
   text-decoration: underline;
   color: blue;
 }
@@ -381,10 +380,12 @@ select
   justify-content: left;
   width: 50%;
 }
-.publishButton
+#AnnDescription
 {
-  margin-top: 5%;
+  margin-bottom: 5%;
 }
+
+
 
 
 @media (max-width:500px) {

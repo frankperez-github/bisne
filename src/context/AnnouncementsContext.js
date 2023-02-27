@@ -1,37 +1,13 @@
 import { createContext, useState } from "react";
 const AnnouncementsContext = createContext();
+import Announcements from "../Announcements.json";
 
 export const AnnouncementsContextProvider = ({children})=>{
 
     const[menu, setMenu] = useState(false);
     const menuIcons = ["cart.svg", "star.svg", "edit.svg", "paper.svg", "person.svg", "stonks.svg"];
-
-    const announcements = [
-        {
-            id: 1,
-            name: "Laptop HP",
-            description: "Laptop en perfecto estado, solo tiene detalles, le falta la pantalla y el teclado",
-            price: 5000,
-            currency: "USD",
-            images: [
-                "/announcPreview.png"
-            ],
-            phone: "+5353103058",
-            category:"Compra y Venta"
-        },
-        {
-            id: 2,
-            name: "Laptop HP x2",
-            description: "Laptop en perfecto estado, solo tiene detalles, le falta la pantalla y el teclado",
-            price: 5000,
-            currency: "USD",
-            images: [
-                "/announcPreview.png"
-            ],
-            phone: "+5353103058",
-            category:"Compra y Venta"
-        }
-    ]
+    
+    const [announcements, setAnnouncements] = useState(Announcements)
     
     const Categories = [
         {
@@ -119,7 +95,8 @@ export const AnnouncementsContextProvider = ({children})=>{
             results,
             menuIcons,
             Categories,
-            filterCateg
+            filterCateg,
+            setAnnouncements
         }}>
 
         {children}
