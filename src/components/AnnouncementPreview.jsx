@@ -18,7 +18,7 @@ function AnnouncementPreview({announcement})
                 <div className="imagePreview" style={imagePreview}>
                 </div>
                 <div className="announcInfo">
-                    <h3 className="name">{announcement.name}</h3>
+                    <h3 className="name">{announcement.title}</h3>
                     <p className="description">{announcement.description}</p>
                     <p className="price">$ {announcement.price} {announcement.currency}</p>
                 </div>

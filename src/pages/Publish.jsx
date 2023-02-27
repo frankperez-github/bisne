@@ -48,17 +48,21 @@ function Publish ()
         var price = document.getElementById('AnnPrice')
         var currency = document.getElementById('AnnCurrency')
         var category = document.getElementById('AnnCategory')
+        var phone = document.getElementById('AnnPhone')
+        var name = document.getElementById('AnnName')
+
 
         const newAnnounc ={
             "id": announcements.length+1,
-            "name": title.value,
+            "title": title.value,
             "description": description.value,
             "price": price.value,
             "currency": currency.value,
             "images": [
                 "/announcPreview.png"
             ],
-            "phone": "+5353103058",
+            "phone": phone.value,
+            "name:": name.value,
             "category": category.value
         }
 
@@ -111,8 +115,15 @@ function Publish ()
                         </div>
                     </div>
 
+                    <p>Nombre</p>
+                    <input id="AnnName" className="phoneNumber" type="phone" placeholder="Nombre para contacto"/>
+                    <p>Teléfono</p>
+                    <input id="AnnPhone" className="phoneNumber" type="phone" placeholder="Teléfono para contacto"/>
+
+
                     <p>Título</p>
                     <input id="AnnTitle" type="text" placeholder="Título del anuncio"/>
+
 
                     <p>Descripcion</p>
                     <textarea id="AnnDescription" name="descr" cols="45" rows="10" placeholder="Describe el producto o servicio de brindas"></textarea>

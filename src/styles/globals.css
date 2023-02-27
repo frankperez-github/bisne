@@ -329,7 +329,7 @@ select
 {
   padding: 5% 10%;
   background-color: white;
-  height: 87vh;
+  height: cover;
 }
 .publishForm select, input, textarea
 {
@@ -378,6 +378,10 @@ select
   align-items: center;
   display: flex;
   justify-content: left;
+  width: 50%;
+}
+.phoneNumber
+{
   width: 50%;
 }
 #AnnDescription
