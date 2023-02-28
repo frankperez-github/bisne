@@ -389,7 +389,13 @@ select
   margin-bottom: 5%;
 }
 
-
+.slide
+{
+  position: fixed;
+  width: auto;
+  min-height: 250px;
+  height: 35vh;
+}
 
 
 @media (max-width:500px) {

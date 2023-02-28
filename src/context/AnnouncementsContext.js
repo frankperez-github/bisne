@@ -60,7 +60,7 @@ export const AnnouncementsContextProvider = ({children})=>{
 
             var newResults=[]
             announcements.map(announc => {
-                if(announc.name.toLowerCase().includes(query.toLowerCase()) || 
+                if(announc.title.toLowerCase().includes(query.toLowerCase()) || 
                     announc.description.toLowerCase().includes(query.toLowerCase())){
                     newResults=[announc, ...newResults];
                 }
@@ -85,6 +85,8 @@ export const AnnouncementsContextProvider = ({children})=>{
         }
     }
 
+    const promotions =["/announcementImage.png", "/announcementImage.png", "/announcementImage.png"]
+
     return (
     <AnnouncementsContext.Provider 
         value={{
@@ -96,7 +98,8 @@ export const AnnouncementsContextProvider = ({children})=>{
             menuIcons,
             Categories,
             filterCateg,
-            setAnnouncements
+            setAnnouncements,
+            promotions
         }}>
 
         {children}
