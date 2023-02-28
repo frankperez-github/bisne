@@ -19,13 +19,13 @@ function Gallery() {
             <Menu />
             <Header />
             <div className="PromotionSlides">
-            {/* <Swiper pagination={true} loop={true} autoplay={{ delay: 5000 }} modules={[Pagination, Autoplay]} className="mySwiper">
+            <Swiper pagination={true} loop={true} autoplay={{ delay: 5000 }} modules={[Pagination, Autoplay]} className="mySwiper">
                     {promotions.map((promoImg) => (
                         <SwiperSlide key={promoImg} className="slide">
                             <Image alt='promo' src={promoImg} fill/>
                         </SwiperSlide>
                     ))}
-                </Swiper> */}
+                </Swiper>
             </div>
             {
                 announcements.map((announc) => (
