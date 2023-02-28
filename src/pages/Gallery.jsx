@@ -1,5 +1,5 @@
 import Announcemnts from "../Announcements.json";
-import Image from 'next/Image'
+import Image from 'next/image'
 import AnnouncementPreview from "@/components/AnnouncementPreview";
 import Header from "@/components/Header";
 import Menu from "@/components/Menu";
