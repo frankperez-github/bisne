@@ -396,7 +396,16 @@ select
   min-height: 250px;
   height: 35vh;
 }
-
+.floatingButton
+{
+  position: fixed;
+  top: 85%;
+  left: 80%;
+  background-color: blue;
+  padding: 3.5%;
+  width: 15%;
+  border-radius: 50%;
+}
 
 @media (max-width:500px) {
   h1{

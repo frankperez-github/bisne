@@ -21,10 +21,15 @@ function Header ()
                 <Link href="/Search" className="lupa">
                     <Image className="image"  src="/lupa.svg" alt="lupa" fill/>
                 </Link>
-                <div href=""className="burger" onClick={()=>setMenu(true)}>
+                <div className="burger" onClick={()=>setMenu(true)}>
                     <Image className="image"  src="/more.svg" alt="burger" fill/>
                 </div>
+                <Link href="/Publish" className="floatingButton">
+                    <Image className="image" src="/edit.svg" fill/>
+                </Link>
             </div>
+
+            
         </div>
     );
 }
