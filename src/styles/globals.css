@@ -399,12 +399,19 @@ select
 .floatingButton
 {
   position: fixed;
-  top: 85%;
-  left: 80%;
-  background-color: blue;
-  padding: 3.5%;
+  top: 83%;
+  left: 79%;
+  background-color:#358E3E;
+  padding: 1%;
+  padding-bottom: 2.5%;
+  text-align: center;
   width: 15%;
   border-radius: 50%;
+  color: white;
+}
+.floatingButton h1
+{
+  font-size: 50px !important;
 }
 
 @media (max-width:500px) {
