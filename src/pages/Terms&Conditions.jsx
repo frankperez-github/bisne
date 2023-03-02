@@ -14,7 +14,7 @@ function Terms_Conditions()
 
 La administración no se hace responsable por el contenido de los anuncios publicados. De igual forma insta a los usuarios del sitio a denunciar cualquier publicación de procedencia política, religiosa o ilegal. El Bisne es un espacio comunitario virtual y respetar las reglas contribuye al mantenimiento del equilibrio y el respeto entre nuestros miembros. 
 
-Ante cualquier inconveniente, duda, sugerencia o solicitud puede contactarnos mediante la opción "contactar con creadores" su criterio nos es importante!
+Ante cualquier inconveniente, duda, sugerencia o solicitud puede contactarnos mediante la opción &quot;contactar con creadores&quot; su criterio nos es importante!
                 </p>
             </div>
         </div>
