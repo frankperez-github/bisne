@@ -9,8 +9,7 @@ function ContactTeam() {
             
             <div className="infoSections">
                 <p className="infoText">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, deleniti quaerat aperiam iste labore dicta porro illo quae laudantium facere nulla distinctio. Nobis repudiandae necessitatibus, deserunt vero ipsa mollitia eius!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dolore incidunt commodi labore aperiam rem, delectus aliquam adipisci temporibus, quas architecto illo odio soluta ullam eveniet. Ea sunt molestiae modi?
+                Comuníquese con los creadores de la plataforma para transmitir su criterio, sugerencia y/o presentar alguna queja o discrepancia con algún mecanismo de funcionamiento general o anuncio en particular publicado en esta web. Estamos para servirle !
                 </p>
 
                     <a href="https://wa.me/+5353053079" className="siteButton">

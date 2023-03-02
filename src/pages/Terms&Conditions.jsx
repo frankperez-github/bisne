@@ -10,10 +10,11 @@ function Terms_Conditions()
 
             <div className="infoSections">
                 <p className="infoText">
-                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, nam ut odio ipsum laborum, deserunt iusto illum libero nesciunt officiis harum, odit quas quis beatae dolore dolorum minima debitis provident.
-                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique in obcaecati exercitationem ullam qui omnis repellat nostrum sed dolorum non iusto, quia voluptates dicta. Necessitatibus iure ipsa quia accusamus. Ex!
-                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ab voluptates iusto porro perspiciatis, excepturi quisquam in delectus voluptatem, ullam cupiditate at impedit! Totam quia vero accusamus possimus dolor cupiditate.
-                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia dolores magni quisquam maxime culpa asperiores, amet explicabo porro quis reprehenderit incidunt. Ipsum consequuntur rem fugit commodi reiciendis doloribus tempore voluptates.
+                Estimado usuario. El Bisne es una plataforma cubana que tiene la misión de brindarle a los actores económicos del país un espacio en dónde promocionar sus productos de manera gratuita. Asimismo puede ser usada para el comercio minorista de productos y servicios. 
+
+La administración no se hace responsable por el contenido de los anuncios publicados. De igual forma insta a los usuarios del sitio a denunciar cualquier publicación de procedencia política, religiosa o ilegal. El Bisne es un espacio comunitario virtual y respetar las reglas contribuye al mantenimiento del equilibrio y el respeto entre nuestros miembros. 
+
+Ante cualquier inconveniente, duda, sugerencia o solicitud puede contactarnos mediante la opción "contactar con creadores" su criterio nos es importante!
                 </p>
             </div>
         </div>
