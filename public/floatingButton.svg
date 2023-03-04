@@ -8,7 +8,26 @@
       <feComposite in="SourceGraphic"/>
     </filter>
   </defs>
-  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Trazado_26)">
-    <path id="Trazado_26-2" data-name="Trazado 26" d="M32.5,0A32.5,32.5,0,1,1,0,32.5,32.5,32.5,0,0,1,32.5,0Z" transform="translate(13 10)" fill="#358e3e"/>
+  <g id="Grupo_79" data-name="Grupo 79" transform="translate(-277 -706)">
+    <g transform="matrix(1, 0, 0, 1, 277, 706)" filter="url(#Trazado_26)">
+      <path id="Trazado_26-2" data-name="Trazado 26" d="M32.5,0A32.5,32.5,0,1,1,0,32.5,32.5,32.5,0,0,1,32.5,0Z" transform="translate(13 10)" fill="#358e3e"/>
+    </g>
+    <g id="Grupo_10" data-name="Grupo 10" transform="translate(-293.21 439.966)">
+      <g id="Grupo_6" data-name="Grupo 6" transform="translate(602.21 294.034)">
+        <g id="Grupo_5" data-name="Grupo 5">
+          <path id="Trazado_5" data-name="Trazado 5" d="M606.1,323a3.849,3.849,0,0,1-3.891-3.8h0V297.837a3.848,3.848,0,0,1,3.891-3.8h17.6a3.844,3.844,0,0,1,3.885,3.8h0V319.2A3.847,3.847,0,0,1,623.7,323H606.1Zm-1.408-25.165V319.2a1.4,1.4,0,0,0,1.408,1.368h17.6a1.384,1.384,0,0,0,1.4-1.368h0V297.837a1.385,1.385,0,0,0-1.4-1.371H606.1a1.4,1.4,0,0,0-1.408,1.371Z" transform="translate(-602.21 -294.034)" fill="#fff"/>
+        </g>
+      </g>
+      <g id="Grupo_9" data-name="Grupo 9" transform="translate(608.759 296.227)">
+        <path id="Trazado_6" data-name="Trazado 6" d="M617.4,311.256l-2.962-3.842-3.914,4.712,1.1,1.426Z" transform="translate(-607.597 -294.357)" fill="#fff"/>
+        <g id="Grupo_7" data-name="Grupo 7" transform="translate(7.451)">
+          <path id="Trazado_7" data-name="Trazado 7" d="M634.441,297.013a2.715,2.715,0,0,0-3.741-.539l-1.213.888,3.221,4.2,1.2-.886A2.57,2.57,0,0,0,634.441,297.013Zm-2.717,5.286-3.224-4.214-14.005,10.235,3.227,4.2Z" transform="translate(-614.494 -295.958)" fill="#fff"/>
+        </g>
+        <path id="Trazado_8" data-name="Trazado 8" d="M611.275,313.294l-1.044-1.368-2.275,2.72Z" transform="translate(-607.956 -293.726)" fill="#fff"/>
+        <g id="Grupo_8" data-name="Grupo 8" transform="translate(2.741 12.82)">
+          <path id="Trazado_9" data-name="Trazado 9" d="M617.614,311.314l-6,2.444-1.258-1.641,3.986-4.767.113.092-.113-.092.122-.144,3.146,4.108Zm-3.158-3.636-3.721,4.446.978,1.274,5.438-2.213-2.694-3.507Z" transform="translate(-610.361 -307.206)" fill="#fff"/>
+        </g>
+      </g>
+    </g>
   </g>
 </svg>

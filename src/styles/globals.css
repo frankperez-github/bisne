@@ -396,18 +396,13 @@ select
 {
   position: fixed;
   top: 82%;
-  left: 81%;
+  left: 75%;
   padding: 2%;
   padding-top: 1%;
   padding-left: 3.5%;
-  background-color:#358E3E;
   text-align: center;
   align-items: center;
-  width: 17%;
-  color: white;
-  background: url("/floatingButton.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  width: 25%;
 }
 .floatingButton h1
 {

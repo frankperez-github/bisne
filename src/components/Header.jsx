@@ -25,7 +25,7 @@ function Header ()
                     <Image className="image"  src="/more.svg" alt="burger" fill/>
                 </div>
                 <Link href="/Publish" className="floatingButton">
-                    <h1>+</h1>
+                    <Image className="image"  src="/floatingButton.svg" alt="burger" fill/>
                 </Link>
             </div>
 
