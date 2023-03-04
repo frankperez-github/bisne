@@ -82,8 +82,8 @@ a {
 }
 .logo
 {
-  margin: 0 1%;
-  width: 20%;
+  padding-top: 1%;
+  width: 25%;
 }
 .lupa
 {
@@ -100,14 +100,10 @@ a {
 .nameAndLogo
 {
   cursor: pointer;
-  width: 40%;
+  width: 45%;
   align-items: center;
   display: flex;
   justify-content: left;
-}
-.nameAndLogo h1
-{
-  padding-left: 8%;
 }
 .searchAndBurger
 {
@@ -399,15 +395,18 @@ select
 .floatingButton
 {
   position: fixed;
-  top: 83%;
+  top: 82%;
   left: 79%;
+  padding: 2%;
+  padding-top: 1%;
   background-color:#358E3E;
-  padding: 1%;
-  padding-bottom: 2%;
   text-align: center;
-  width: 15%;
-  border-radius: 50%;
+  align-items: center;
+  width: 17%;
   color: white;
+  background: url("/floatingButton.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .floatingButton h1
 {
