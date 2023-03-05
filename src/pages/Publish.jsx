@@ -77,8 +77,6 @@ function Publish ()
             window.open(`https://api.whatsapp.com/send?phone=+1305-709-0744&text=${newAnn}`)
         }
                 
-        console.log(newAnn)
-        
     }
     
     return(
