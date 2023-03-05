@@ -52,7 +52,7 @@ p{
 }
 html,
 body {
-  background-color: rgb(215, 215, 215);
+  background-color: rgb(231, 231, 231);
   overflow-x: hidden;
 }
 
@@ -410,8 +410,19 @@ select
 
 .whappButton
 {
-  width: 60%;
-  margin: 2% 20%;
+  width: 80%;
+  margin: 2% 10%;
+}
+.swiper-pagination
+{
+  background-color: rgb(231, 231, 231);
+  position: absolute;
+  top: 93% !important;
+  height: 8vh !important;
+  margin-bottom: 0 !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: #64CA47!important;
 }
 @media (max-width:500px) {
   h1{
