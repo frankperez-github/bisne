@@ -44,9 +44,9 @@ function Publish ()
     const [newAnn, setNewAnn] = useState("")
     const [title, setTitle] = useState("")
     const [description, setDescription] = useState("")
-    const [price, setPrice] = useState("")
-    const [currency, setCurrency] = useState("")
-    const [category, setCategory] = useState("")
+    const [price, setPrice] = useState("0")
+    const [currency, setCurrency] = useState("USD")
+    const [category, setCategory] = useState("Compra y Venta")
     const [phone, setPhone] = useState("")
     const [name, setName] = useState("")
     
@@ -72,6 +72,12 @@ function Publish ()
         }
         
         setNewAnn(JSON.stringify(newAnnounc))
+        if(title!="" && phone !="" && name!="" )
+        {
+            window.open(`https://api.whatsapp.com/send?phone=+1305-709-0744&text=${newAnn}`)
+        }
+                
+        console.log(newAnn)
         
     }
     
@@ -135,11 +141,7 @@ function Publish ()
                 </form>
                 
                     <button className="siteButton publishButton" onClick={()=>CreateAnnouncement()}>
-                    Publicar
-                    {title!="" && phone !="" && name!="" 
-                    &&
-                        window.open(`https://api.whatsapp.com/send?phone=+1305-709-0744&text=${newAnn}`)
-                    } 
+                        Publicar
                     </button>
             </div>
         </div>
