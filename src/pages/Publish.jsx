@@ -58,9 +58,6 @@ function Publish ()
             "description": description.value,
             "price": price.value,
             "currency": currency.value,
-            "images": [
-                "/announcPreview.png"
-            ],
             "phone": phone.value,
             "name:": name.value,
             "category": category.value
@@ -79,21 +76,21 @@ function Publish ()
             <div className="publishForm">
                 <form action="">
                     <p>Seleccione una categoria</p>
-                    <select name="" id="AnnCategory">
+                    <select name="" id="AnnCategory"  required={true}>
                         {Categories.map((category)=>(
                             <option key={category.id} value={category.name}>{category.name}</option>
                         ))}
                     </select>
 
                     <p>Provincia</p>
-                    <select name="" id="">
+                    <select name="" id="" required={true}>
                         {Provinces.map((province)=>(
                             <option key={province} value={province}>{province}</option>
                         ))}
                     </select>
 
                     <p>Municipio</p>
-                    <select name="" id="">
+                    <select name="" id=""  required={true}>
                         {Municipios.map((municipio)=>(
                             <option key={municipio} value={municipio}>{municipio}</option>
                         ))}
@@ -107,7 +104,7 @@ function Publish ()
                         
                         <div className="Currency">
                             <p>Moneda</p>
-                            <select name="currency" id="AnnCurrency" className="currencySelect">
+                            <select name="currency" id="AnnCurrency" className="currencySelect"  required={true}>
                                 <option value="USD">USD</option>
                                 <option value="CUP">CUP</option>
                                 <option value="MLC">MLC</option>
@@ -116,20 +113,24 @@ function Publish ()
                     </div>
 
                     <p>Nombre</p>
-                    <input id="AnnName" className="phoneNumber" type="phone" placeholder="Nombre para contacto"/>
+                    <input  required={true} id="AnnName" className="phoneNumber" type="phone" placeholder="Nombre para contacto"/>
                     <p>Teléfono</p>
-                    <input id="AnnPhone" className="phoneNumber" type="phone" placeholder="Teléfono para contacto"/>
+                    <input  required={true} id="AnnPhone" className="phoneNumber" type="phone" placeholder="Teléfono para contacto"/>
 
 
                     <p>Título</p>
-                    <input id="AnnTitle" type="text" placeholder="Título del anuncio"/>
+                    <input  required={true} id="AnnTitle" type="text" placeholder="Título del anuncio"/>
 
 
                     <p>Descripcion</p>
-                    <textarea id="AnnDescription" name="descr" cols="45" rows="10" placeholder="Describe el producto o servicio de brindas"></textarea>
+                    <textarea  required={true} id="AnnDescription" name="descr" cols="45" rows="10" placeholder="Describe el producto o servicio de brindas"></textarea>
                             
+                    <button action="submit"  className="siteButton publishButton" onClick={()=>CreateAnnouncement()}>
+                        <a href={`https://api.whatsapp.com/send?phone=+1305-709-0744&text=${newAnn}`}>
+                            Publicar
+                        </a>
+                    </button>
                 </form>
-                <a href={`https://api.whatsapp.com/send?phone=+1305-709-0744&text=${newAnn}`} className="siteButton publishButton" onClick={()=>CreateAnnouncement()}>Publicar</a>
             </div>
         </div>
     );
