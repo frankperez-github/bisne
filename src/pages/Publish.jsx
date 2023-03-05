@@ -63,8 +63,7 @@ function Publish ()
             "category": category.value
         }
 
-        // setAnnouncements([newAnnounc,...announcements])
-        setNewAnn(JSON.stringify(newAnnounc))
+        setNewAnn(newAnnounc)
         
     }
     
@@ -123,14 +122,14 @@ function Publish ()
 
 
                     <p>Descripcion</p>
-                    <textarea  required={true} id="AnnDescription" name="descr" cols="45" rows="10" placeholder="Describe el producto o servicio de brindas"></textarea>
+                    <textarea  required={true} id="AnnDescription" name="descr" cols="45" rows="10" placeholder="Describe el producto o servicio que brindas"></textarea>
                             
+                </form>
                     <button action="submit"  className="siteButton publishButton" onClick={()=>CreateAnnouncement()}>
                         <a href={`https://api.whatsapp.com/send?phone=+1305-709-0744&text=${newAnn}`}>
                             Publicar
                         </a>
                     </button>
-                </form>
             </div>
         </div>
     );
