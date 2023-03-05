@@ -1,0 +1,259 @@
+[
+    {
+        "id": 1,
+        "title": "Laptop HP",
+        "description": "Laptop en perfecto estado, solo tiene detalles, le falta la pantalla y el teclado",
+        "price": 5000,
+        "currency": "USD",
+        "images": [
+            "/announcPreview.png"
+        ],
+        "phone": "+5353103058",
+        "name:": "Frank",
+        "category":"Compra y Venta"
+    },
+    {
+        "id": 2,
+        "title": "Laptop HP x2",
+        "description": "Laptop en perfecto estado, solo tiene detalles, le falta la pantalla y el teclado",
+        "price": 5000,
+        "currency": "USD",
+        "images": [
+            "/announcPreview.png"
+        ],
+        "phone": "+5353103058",
+        "name:": "Frank",
+        "category":"Compra y Venta"
+    },
+    {
+        "id": 3,
+        "title": "Laptop HP",
+        "description": "Laptop en perfecto estado, solo tiene detalles, le falta la pantalla y el teclado",
+        "price": 5000,
+        "currency": "USD",
+        "images": [
+            "/announcPreview.png"
+        ],
+        "phone": "+5353103058",
+        "name:": "Frank",
+        "category":"Compra y Venta"
+    },
+    {
+        "id": 4,
+        "title": "Laptop HP x2",
+        "description": "Laptop en perfecto estado, solo tiene detalles, le falta la pantalla y el teclado",
+        "price": 5000,
+        "currency": "USD",
+        "images": [
+            "/announcPreview.png"
+        ],
+        "phone": "+5353103058",
+        "name:": "Frank",
+        "category":"Compra y Venta"
+    },
+    {
+        "id": 5,
+        "title": "Laptop HP",
+        "description": "Laptop en perfecto estado, solo tiene detalles, le falta la pantalla y el teclado",
+        "price": 5000,
+        "currency": "USD",
+        "images": [
+            "/announcPreview.png"
+        ],
+        "phone": "+5353103058",
+        "name:": "Frank",
+        "category":"Compra y Venta"
+    },
+    {
+        "id": 6,
+        "title": "Laptop HP x2",
+        "description": "Laptop en perfecto estado, solo tiene detalles, le falta la pantalla y el teclado",
+        "price": 5000,
+        "currency": "USD",
+        "images": [
+            "/announcPreview.png"
+        ],
+        "phone": "+5353103058",
+        "name:": "Frank",
+        "category":"Compra y Venta"
+    },
+    {
+        "id": 7,
+        "title": "Laptop HP",
+        "description": "Laptop en perfecto estado, solo tiene detalles, le falta la pantalla y el teclado",
+        "price": 5000,
+        "currency": "USD",
+        "images": [
+            "/announcPreview.png"
+        ],
+        "phone": "+5353103058",
+        "name:": "Frank",
+        "category":"Compra y Venta"
+    },
+    {
+        "id": 8,
+        "title": "Laptop HP x2",
+        "description": "Laptop en perfecto estado, solo tiene detalles, le falta la pantalla y el teclado",
+        "price": 5000,
+        "currency": "USD",
+        "images": [
+            "/announcPreview.png"
+        ],
+        "phone": "+5353103058",
+        "name:": "Frank",
+        "category":"Compra y Venta"
+    },
+    {
+        "id": 9,
+        "title": "Laptop HP",
+        "description": "Laptop en perfecto estado, solo tiene detalles, le falta la pantalla y el teclado",
+        "price": 5000,
+        "currency": "USD",
+        "images": [
+            "/announcPreview.png"
+        ],
+        "phone": "+5353103058",
+        "name:": "Frank",
+        "category":"Compra y Venta"
+    },
+    {
+        "id": 10,
+        "title": "Laptop HP x2",
+        "description": "Laptop en perfecto estado, solo tiene detalles, le falta la pantalla y el teclado",
+        "price": 5000,
+        "currency": "USD",
+        "images": [
+            "/announcPreview.png"
+        ],
+        "phone": "+5353103058",
+        "name:": "Frank",
+        "category":"Compra y Venta"
+    },
+    {
+        "id": 11,
+        "title": "Laptop HP",
+        "description": "Laptop en perfecto estado, solo tiene detalles, le falta la pantalla y el teclado",
+        "price": 5000,
+        "currency": "USD",
+        "images": [
+            "/announcPreview.png"
+        ],
+        "phone": "+5353103058",
+        "name:": "Frank",
+        "category":"Compra y Venta"
+    },
+    {
+        "id": 12,
+        "title": "Laptop HP x2",
+        "description": "Laptop en perfecto estado, solo tiene detalles, le falta la pantalla y el teclado",
+        "price": 5000,
+        "currency": "USD",
+        "images": [
+            "/announcPreview.png"
+        ],
+        "phone": "+5353103058",
+        "name:": "Frank",
+        "category":"Compra y Venta"
+    },
+    {
+        "id": 13,
+        "title": "Laptop HP",
+        "description": "Laptop en perfecto estado, solo tiene detalles, le falta la pantalla y el teclado",
+        "price": 5000,
+        "currency": "USD",
+        "images": [
+            "/announcPreview.png"
+        ],
+        "phone": "+5353103058",
+        "name:": "Frank",
+        "category":"Compra y Venta"
+    },
+    {
+        "id": 14,
+        "title": "Laptop HP x2",
+        "description": "Laptop en perfecto estado, solo tiene detalles, le falta la pantalla y el teclado",
+        "price": 5000,
+        "currency": "USD",
+        "images": [
+            "/announcPreview.png"
+        ],
+        "phone": "+5353103058",
+        "name:": "Frank",
+        "category":"Compra y Venta"
+    },
+    {
+        "id": 15,
+        "title": "Laptop HP",
+        "description": "Laptop en perfecto estado, solo tiene detalles, le falta la pantalla y el teclado",
+        "price": 5000,
+        "currency": "USD",
+        "images": [
+            "/announcPreview.png"
+        ],
+        "phone": "+5353103058",
+        "name:": "Frank",
+        "category":"Compra y Venta"
+    },
+    {
+        "id": 16,
+        "title": "Laptop HP x2",
+        "description": "Laptop en perfecto estado, solo tiene detalles, le falta la pantalla y el teclado",
+        "price": 5000,
+        "currency": "USD",
+        "images": [
+            "/announcPreview.png"
+        ],
+        "phone": "+5353103058",
+        "name:": "Frank",
+        "category":"Compra y Venta"
+    },
+    {
+        "id": 17,
+        "title": "Laptop HP",
+        "description": "Laptop en perfecto estado, solo tiene detalles, le falta la pantalla y el teclado",
+        "price": 5000,
+        "currency": "USD",
+        "images": [
+            "/announcPreview.png"
+        ],
+        "phone": "+5353103058",
+        "name:": "Frank",
+        "category":"Compra y Venta"
+    },
+    {
+        "id": 18,
+        "title": "Laptop HP x2",
+        "description": "Laptop en perfecto estado, solo tiene detalles, le falta la pantalla y el teclado",
+        "price": 5000,
+        "currency": "USD",
+        "images": [
+            "/announcPreview.png"
+        ],
+        "phone": "+5353103058",
+        "name:": "Frank",
+        "category":"Compra y Venta"
+    },
+    {
+        "id": 19,
+        "title": "Laptop HP",
+        "description": "Laptop en perfecto estado, solo tiene detalles, le falta la pantalla y el teclado",
+        "price": 5000,
+        "currency": "USD",
+        "images": [
+            "/announcPreview.png"
+        ],
+        "phone": "+5353103058",
+        "name:": "Frank",
+        "category":"Compra y Venta"
+    },
+    {
+        "id": 20,
+        "title": "sin images",
+        "description": "Laptop en perfecto estado, solo tiene detalles, le falta la pantalla y el teclado",
+        "price": 5000,
+        "currency": "USD",
+        "phone": "+5353103058",
+        "name:": "Frank",
+        "category":"Compra y Venta"
+    }
+]
