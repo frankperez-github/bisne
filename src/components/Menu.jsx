@@ -20,7 +20,7 @@ function Menu()
                     <Image  src="cart.svg" alt="" width={20} height={20} />
                     <p>Categorias</p>
                 </Link>
-                <Link href="" className="row" onClick={()=>(setMenu(false), navigator.share("www.google.com"))}>
+                <Link href="https://www.addtoany.com/share" className="row" onClick={()=>(setMenu(false), navigator.share("www.google.com"))}>
                     <Image  src="star.svg" alt="" width={20} height={20} />
                     <p>Invitar amigos</p>
                 </Link >

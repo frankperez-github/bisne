@@ -12,7 +12,7 @@ function ContactTeam() {
                 Comuníquese con los creadores de la plataforma para transmitir su criterio, sugerencia y/o presentar alguna queja o discrepancia con algún mecanismo de funcionamiento general o anuncio en particular publicado en esta web. Estamos para servirle !
                 </p>
 
-                    <a href="https://wa.me/+5353053079" className="siteButton">
+                    <a href="https://wa.me/+1305-709-0744" className="siteButton">
                         Contactar Equipo
                     </a>
             </div>
