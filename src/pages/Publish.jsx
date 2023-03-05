@@ -52,7 +52,7 @@ function Publish ()
         var name = document.getElementById('AnnName')
 
 
-        const newAnnounc ={
+        const newAnnounc = {
             "id": announcements.length+1,
             "title": title.value,
             "description": description.value,
