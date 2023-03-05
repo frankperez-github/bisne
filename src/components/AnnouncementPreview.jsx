@@ -18,7 +18,9 @@ function AnnouncementPreview({announcement})
                     </div>
                     <div className="announcInfo">
                         <h3 className="name">{announcement.title}</h3>
-                        <p className="description">{announcement.description}</p>
+                        <p className="description">{
+                            announcement.description.substr(0, 120)+"..."
+                        }</p>
                         <p className="price">$ {announcement.price} {announcement.currency}</p>
                     </div>
             </div>

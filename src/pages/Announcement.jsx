@@ -10,13 +10,17 @@ function Announcement()
     const router = useRouter()
     const {id} = router.query
     const[Announcement, setAnnouncement] = useState({});
-
+    const[descrArray, setDescriptArray] = useState([])
     useEffect(()=>(
-        setAnnouncement(announcements[id-1])
+        setAnnouncement(announcements[id-1]),
+        (setDescriptArray((Announcement.description).split('\n')))
     ),[])
-    var princImage = Announcement.images == undefined ? `/${Announcement.category}.png` : Announcement.images[0]
+        
+        var princImage = Announcement.images == undefined ? `/${Announcement.category}.png` : Announcement.images[0]
+        
     return(
         Announcement !== undefined &&
+
         <div className="Announcement">
             <ReturnBar />
             <div className="container">
@@ -26,7 +30,9 @@ function Announcement()
 
                 <h2 className="announcInfoLine">{Announcement.name}</h2>
                 
-                <p className="announcInfoLine">{Announcement.description}</p>
+                    {descrArray.map(line =>(
+                        <p key={line} className="announcInfoLine">{line}</p>
+                    ))}
 
                 <br/>
                 <div className="contact">
