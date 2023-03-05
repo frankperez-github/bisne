@@ -13,7 +13,7 @@ function Promotion()
                     Si deseas que tu anuncio llegue a cientos de personas y que se posicione en nuestra plataforma, sólo debes contactarnos vía WhatsApp.
                 </p>
 
-                <a href="https://wa.me/+5353053079" className="siteButton">
+                <a href="https://wa.me/+1305-709-0744" className="siteButton">
                     Solicitar Promoción
                 </a>
             </div>
