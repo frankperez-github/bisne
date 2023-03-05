@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import AnnouncementsContext from "@/context/AnnouncementsContext";
 import ReturnBar from "@/components/ReturnBar";
 import Titlebar from "@/components/TitleBar";
@@ -40,30 +40,38 @@ function Publish ()
         "San Miguel del Padrón",
         "Cotorro"
     ]
-    const[newAnn, setNewAnn] = useState("")
 
+    const [newAnn, setNewAnn] = useState("")
+    const [title, setTitle] = useState("")
+    const [description, setDescription] = useState("")
+    const [price, setPrice] = useState("")
+    const [currency, setCurrency] = useState("")
+    const [category, setCategory] = useState("")
+    const [phone, setPhone] = useState("")
+    const [name, setName] = useState("")
+    
     function CreateAnnouncement() {
-        var title = document.getElementById('AnnTitle')
-        var description = document.getElementById('AnnDescription')
-        var price = document.getElementById('AnnPrice')
-        var currency = document.getElementById('AnnCurrency')
-        var category = document.getElementById('AnnCategory')
-        var phone = document.getElementById('AnnPhone')
-        var name = document.getElementById('AnnName')
-
-
+        
+        setTitle(document.getElementById('AnnTitle').value)
+        setDescription(document.getElementById('AnnDescription').value)
+        setPrice(document.getElementById('AnnPrice').value)
+        setCurrency(document.getElementById('AnnCurrency').value)
+        setCategory(document.getElementById('AnnCategory').value)
+        setPhone(document.getElementById('AnnPhone').value)
+        setName(document.getElementById('AnnName').value)
+        
         const newAnnounc = {
             "id": announcements.length+1,
-            "title": title.value,
-            "description": description.value,
-            "price": price.value,
-            "currency": currency.value,
-            "phone": phone.value,
-            "name:": name.value,
-            "category": category.value
+            "title": title,
+            "description": description,
+            "price": price,
+            "currency": currency,
+            "phone": phone,
+            "name": name,
+            "category": category
         }
-
-        setNewAnn(newAnnounc)
+        
+        setNewAnn(JSON.stringify(newAnnounc))
         
     }
     
@@ -123,12 +131,15 @@ function Publish ()
 
                     <p>Descripcion</p>
                     <textarea  required={true} id="AnnDescription" name="descr" cols="45" rows="10" placeholder="Describe el producto o servicio que brindas"></textarea>
-                            
+
                 </form>
-                    <button action="submit"  className="siteButton publishButton" onClick={()=>CreateAnnouncement()}>
-                        <a href={`https://api.whatsapp.com/send?phone=+1305-709-0744&text=${newAnn}`}>
-                            Publicar
-                        </a>
+                
+                    <button className="siteButton publishButton" onClick={()=>CreateAnnouncement()}>
+                    Publicar
+                    {title!="" && phone !="" && name!="" 
+                    &&
+                        window.open(`https://api.whatsapp.com/send?phone=+1305-709-0744&text=${newAnn}`)
+                    } 
                     </button>
             </div>
         </div>
