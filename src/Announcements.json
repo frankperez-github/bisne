@@ -248,13 +248,10 @@
     },
     {
         "id": 20,
-        "title": "Laptop HP x2",
+        "title": "sin images",
         "description": "Laptop en perfecto estado, solo tiene detalles, le falta la pantalla y el teclado",
         "price": 5000,
         "currency": "USD",
-        "images": [
-            "/announcPreview.png"
-        ],
         "phone": "+5353103058",
         "name:": "Frank",
         "category":"Compra y Venta"

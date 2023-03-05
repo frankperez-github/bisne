@@ -9,19 +9,19 @@ function Announcement()
     const {announcements} = useContext(AnnouncementsContext)
     const router = useRouter()
     const {id} = router.query
-    const[Announcement, setAnnouncement] = useState();
+    const[Announcement, setAnnouncement] = useState({});
 
     useEffect(()=>(
         setAnnouncement(announcements[id-1])
     ),[])
-
+    var princImage = Announcement.images == undefined ? `/${Announcement.category}.png` : Announcement.images[0]
     return(
         Announcement !== undefined &&
         <div className="Announcement">
             <ReturnBar />
             <div className="container">
                 <div className="AnnouncementDetailedImages">
-                    <Image className="image" src={Announcement.images[0]} alt="" fill/>
+                    <Image className="image" src={princImage} alt="" fill/>
                 </div>
 
                 <h2 className="announcInfoLine">{Announcement.name}</h2>

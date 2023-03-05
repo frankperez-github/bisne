@@ -1,14 +1,11 @@
 import Link from "next/link";
+import Image from "next/image";
 
 function AnnouncementPreview({announcement})
 {
+    var princImage = announcement.images == undefined ? `/${announcement.category}.png` : announcement.images[0]
     const imagePreview = 
     {
-      backgroundImage: `url(${announcement.images[0]})`,
-      backgroundColor: `rgb(117, 117, 250)`,
-      backgroundPosition: 'center',
-      backgroundRepeat: 'no-repeat',
-      backgroundSize: 'cover',
       position: 'relative',
       width: '40%'
     }
@@ -17,6 +14,7 @@ function AnnouncementPreview({announcement})
             <Link href={`/Announcement/?id=${announcement.id}`}>
             <div className="Preview">
                     <div className="imagePreview" style={imagePreview}>
+                        <Image src={princImage} fill alt="productImage"/>
                     </div>
                     <div className="announcInfo">
                         <h3 className="name">{announcement.title}</h3>
