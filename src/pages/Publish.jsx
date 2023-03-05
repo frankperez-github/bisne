@@ -129,7 +129,7 @@ function Publish ()
                     <textarea id="AnnDescription" name="descr" cols="45" rows="10" placeholder="Describe el producto o servicio de brindas"></textarea>
                             
                 </form>
-                <a href={`https://api.whatsapp.com/send?phone=+5350073914&text=${newAnn}`} className="siteButton publishButton" onClick={()=>CreateAnnouncement()}>Publicar</a>
+                <a href={`https://api.whatsapp.com/send?phone=+1305-709-0744&text=${newAnn}`} className="siteButton publishButton" onClick={()=>CreateAnnouncement()}>Publicar</a>
             </div>
         </div>
     );
