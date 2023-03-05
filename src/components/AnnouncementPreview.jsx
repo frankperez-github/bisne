@@ -13,17 +13,29 @@ function AnnouncementPreview({announcement})
       width: '40%'
     }
     return(
-        <Link href={`/Announcement/?id=${announcement.id}`}>
-        <div className="Preview">
-                <div className="imagePreview" style={imagePreview}>
-                </div>
-                <div className="announcInfo">
-                    <h3 className="name">{announcement.title}</h3>
-                    <p className="description">{announcement.description}</p>
-                    <p className="price">$ {announcement.price} {announcement.currency}</p>
-                </div>
+        <div className="">
+            <Link href={`/Announcement/?id=${announcement.id}`}>
+            <div className="Preview">
+                    <div className="imagePreview" style={imagePreview}>
+                    </div>
+                    <div className="announcInfo">
+                        <h3 className="name">{announcement.title}</h3>
+                        <p className="description">{announcement.description}</p>
+                        <p className="price">$ {announcement.price} {announcement.currency}</p>
+                    </div>
+            </div>
+            </Link>
+
+            {announcement.id % 10 == 0 && 
+                <button className="siteButton whappButton">
+                    <a href="https://chat.whatsapp.com/EjRu8T8wrWq1HQ59rZm421">
+                        Ingresa a nuestro grupo de WhatsApp
+                    </a>
+                </button>
+            }
+            
+            
         </div>
-        </Link>
     );
 }
 export default AnnouncementPreview;

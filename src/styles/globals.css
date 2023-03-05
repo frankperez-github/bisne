@@ -59,6 +59,7 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+  cursor: pointer;
 }
 .image{
   object-fit: contain;
@@ -407,6 +408,11 @@ select
   font-size: 50px !important;
 }
 
+.whappButton
+{
+  width: 60%;
+  margin: 2% 20%;
+}
 @media (max-width:500px) {
   h1{
     font-size: 30px;
