@@ -85,7 +85,7 @@ export const AnnouncementsContextProvider = ({children})=>{
         }
     }
 
-    const promotions =["/announcementImage.png", "/announcementImage.png", "/announcementImage.png"]
+    const promotions =["/promo1.png", "/promo2.png", "/promo3.png", "/promo4.png"]
 
     return (
     <AnnouncementsContext.Provider 
