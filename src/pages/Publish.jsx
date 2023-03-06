@@ -71,9 +71,10 @@ function Publish ()
             "category": category
         }
         
-        setNewAnn(JSON.stringify(newAnnounc))
-        if(title!="" && phone !="" && name!="" )
+        console.log(newAnn)
+        if(title!=="" && phone !=="" && name!=="" )
         {
+            setNewAnn(JSON.stringify(newAnnounc))
             window.open(`https://api.whatsapp.com/send?phone=+1305-709-0744&text=${newAnn}`)
         }
                 
