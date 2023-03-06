@@ -16,7 +16,7 @@
         "price":"100",
         "currency":"USD",
         "phone":"55476042",
-        "images": "/AnnouncementsImages/angel-vans.jpeg",
+        "images": ["/AnnouncementsImages/angel-vans.jpeg"],
         "name":"Angel",
         "category":"Compra y Venta"
     },
