@@ -14,8 +14,9 @@ function Announcement()
         setDescriptArray(announcements[id-1].description.split('\n'))
     ),[])
         
-        var princImage = announcements[id-1].images == undefined ? `/${announcements[id-1].category}.png` : announcements[id-1].images[0]
-        
+    var princImage = announcements[id-1] && (announcements[id-1].images === undefined ? `/${announcements[id-1].category}.png` : announcements[id-1].images[0])
+    
+     
     return(
         announcements[id-1] !== undefined &&
         
@@ -30,7 +31,7 @@ function Announcement()
                 </div>
 
                 <h2 className="announcInfoLine">{announcements[id-1].name}</h2>
-                    { descrArray && descrArray.map(line =>(
+                    {descrArray && descrArray.map(line =>(
                         <p key={line} className="announcInfoLine">{line}</p>
                     ))}
 
