@@ -164,6 +164,7 @@ a {
   display: flex;
   background-color: white;
   width: 95%;
+  height: 35vw;
   margin: 5% 2.5%;
   border: solid;
   border-color: rgb(206, 204, 204);
@@ -183,7 +184,6 @@ a {
 .price
 {
   padding-top: 5%;
-  margin-bottom: 0% !important;
   color: rgb(16, 125, 16);
 }
 
