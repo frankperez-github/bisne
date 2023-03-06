@@ -13,7 +13,7 @@ function Announcement()
     const[descrArray, setDescriptArray] = useState([])
     useEffect(()=>(
         setAnnouncement(announcements[id-1]),
-        setDescriptArray(Announcement.description.split('\n'))
+        setDescriptArray(announcements[id-1].description.split('\n'))
     ),[])
         
         var princImage = Announcement.images == undefined ? `/${Announcement.category}.png` : Announcement.images[0]
