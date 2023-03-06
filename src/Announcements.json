@@ -8,5 +8,13 @@
         "phone":" +1(305) 709-0744",
         "name":"El Bisne ",
         "category":"Otros"
-    }
+    },
+    {
+        "id":2,
+"title":"ChocoThay. Bombones artesanales",
+"description":"Nos especializamos en la elaboración y venta de bombones artesanales de exelente calidad, con precios de primera mano . Trabajamos por encargos para garantizar un producto fresco y puntual cumpliendo con las expectativas de cada cliente ya que todas las ofertas disponibles el cliente puede personalizarlas según su gusto y ocacion. No cobramos por adelantado, usted paga cuando recibe el producto. No pierda la oportunidad de probar nuestro delicioso chocolate , chocoThay es el lugar donde usted llega como cliente y se queda como amigo. Pedidos al WhatsApp 53316469. ",
+"price":"00",
+"currency":"CUP",
+"phone":"53316469",
+"name":"Tahymi","category":"Compra y Venta"}
 ]
