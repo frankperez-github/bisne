@@ -30,7 +30,7 @@ function Announcement()
                     <Image className="image" src={princImage} alt="" fill/>
                 </div>
 
-                <h2 className="announcInfoLine">{announcements[id-1].name}</h2>
+                <h2 className="announcInfoLine">{announcements[id-1].title}</h2>
                     {descrArray && descrArray.map(line =>(
                         <p key={line} className="announcInfoLine">{line}</p>
                     ))}

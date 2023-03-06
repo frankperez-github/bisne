@@ -14,7 +14,7 @@ function AnnouncementPreview({announcement})
             <Link href={`/Announcement/?id=${announcement.id}`}>
             <div className="Preview">
                     <div className="imagePreview" style={imagePreview}>
-                        <Image src={princImage} fill alt="productImage"/>
+                        <Image src={princImage} height={190} width={190} alt="productImage"/>
                     </div>
                     <div className="announcInfo">
                         <h3 className="name">{announcement.title}</h3>
