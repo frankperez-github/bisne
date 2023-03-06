@@ -17,7 +17,7 @@ function AnnouncementPreview({announcement})
                         <Image src={princImage} height={190} width={190} alt="productImage"/>
                     </div>
                     <div className="announcInfo">
-                        <h3 className="name">{announcement.title}</h3>
+                        <h3 className="name">{announcement.title.substr(0, 40)+"..."}</h3>
                         <p className="description">{
                             announcement.description.substr(0, 95)+"..."
                         }</p>

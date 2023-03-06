@@ -182,8 +182,8 @@ a {
 }
 .price
 {
-  padding-top: 10%;
-  margin-bottom: 0;
+  padding-top: 5%;
+  margin-bottom: 0% !important;
   color: rgb(16, 125, 16);
 }
 
