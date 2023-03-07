@@ -38,7 +38,7 @@ function Announcement()
                 <br/>
                 <div className="contact">
                     <p className="announcInfoLine">Contacto: </p>
-                    <a className="announcInfoLine" href={`https://wa.me/:${announcements[Id].phone}`}>{announcements[Id].phone}</a>
+                    <a className="announcInfoLine" href={`https://wa.me/${announcements[Id].phone}`}>{announcements[Id].phone}</a>
                 </div>
 
                 <p className="price announcInfoLine">${announcements[Id].price} {announcements[Id].currency}</p>
