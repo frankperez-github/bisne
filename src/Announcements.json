@@ -10,7 +10,47 @@
         "name":"El Bisne ",
         "category":"Otros"
     },
-
+    {
+        "id":6,
+        "title":"Prendas de Plata Pandora",
+        "description":"Quieres comprar una prenda de calidad \n\nTAVI Silver tiene lo que buscas \n\nlas mejores ofertas \n\nTenemos a la venta todo tipo de prendas Pandora y para todos los gustos \n\nAnillos\nAnillos de Compromiso de Mujer y de Hombres\nAretes\nArgollas \nCadenas\nDijes\nPulseras Flexibles, Rígidas, de Cuero, Essence, Moments, Esclavas, Pavé\nCharms \nRelojes \nManillas\ny mucho más \n\nContactanos! \n\n 5358769120 \n\nLink del Grupo\nhttps://chat.whatsapp.com/GXLtNR0dlTq56m2nBd0lDS\n\nhttps://chat.whatsapp.com/C8KR9QAfFFu3dUaxZyG8a1\n\nhttps://chat.whatsapp.com/GRxq2Nh3nZt7mHk7SGOmZF",
+        "price":"1",
+        "currency":"CUP",
+        "phone":"58769120",
+        "name":"Gabriela",
+        "category":"Compra y Venta"}
+    ,
+    {
+        "id":5,
+        "title":"Tú mejor estilo ",
+        "description":"La mejor 🧐 tienda de ropa artesanal de La Habana, que te ayudará a conseguir tu propio estilo 😎 y que salga a relucir tu belleza ❤️. \n\nY recuerda que el precio lo determina la \"marca\" pero el verdadero valor lo determinas tú. Y nuestro equipo se encarga que cada prenda valga lo que merece el cliente. \n\nTrabajamos para ustedes, si le gusta nuestro trabajo, compartan el enlace de invitación del grupo. Muchas gracias de parte de todos.\n\nhttps://chat.whatsapp.com/EwQ6LgPZoHxKnBjsvtj41n\n\n*Contamos además con entrega a domicilio.* 🏡 🚴‍♂️💨",
+        "price":"00",
+        "currency":"CUP",
+        "phone":"55060905",
+        "name":"Rocío ",
+        "category":"Compra y Venta"}
+    ,
+    {
+        "id":4,
+        "title":"Servicio de Taxi en Cuba ",
+        "description":"Somos Pisi_Taxi una Agencia de Viajes  en Cuba que radica en La Habana\n\n*Contamos con servicios de*:\n\n1 - Desplazamientos dentro de la Habana en moto o auto\n\n2- Mensajerías\n\n3- Desplazamiento a cualquier provincia del país en autos\n\n4- Servicios personalizados de tours y excursiones a cubanos y extranjeros\n\n5- Excursiones abiertas a cubanos y extranjeros en guaguas",
+        "price":"0",
+        "currency":"CUP",
+        "phone":" 5359313908",
+        "name":"Manager Pisi_Taxi ",
+        "category":"Autos"}
+    ,
+    {
+        "id":3,
+        "title":"Bombones de chocolate para regalos🍫 ",
+        "description":"Si buscas un detalle único y especial o simplemente amas el chocolate 🍫 La vie en Rose es el lugar ideal! \n\nContamos con exquisitos bombones de chocolate artesanal y fina decoración para su disfrute. La mayoría de nuestras ofertas son personalizables a su gusto! 😁\n\nCalidad, buen trato y eficiencia garantizadas al 100% 🌹\n\nMensajería a toda la habana 🚚\n\nAnímese a unirse a la, probablemente, mejor chocolatería de La Habana! 😏\n",
+        "price":"000",
+        "currency":"CUP",
+        "phone":"58689896 ",
+        "image": ["/AnnouncementsImages/3.1.jpeg"],
+        "name":"La vie en Rose",
+        "category":"Compra y Venta"
+    },
 
     {
         "id":2,
