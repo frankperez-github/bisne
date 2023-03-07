@@ -1,33 +1,37 @@
 [
     {
-        "id":1,
+        "id":-1,
         "title":"Cómo publicar ? ",
         "description": "Hola ! Bienvenido a \"El Bisne App\" somos una plataforma de anuncios clasificados que tiene el objetivo de brindarle un espacio digital a tu producto o servicio. Para publicar solo debes:\n\n • 1 • Presionar en el botón flotante en la esquina inferior derecha ( el verdecito )\n\n • 2 • Llenar los datos de tu anuncio y presionar en \"ENVIAR\" \n\n• 3 • Se generará un mensaje automático que se enviará vía whatsapp a nuestro número comercial y una vez recibido su anuncio será publicado con la mayor brevedad posible.\n\n",
         "price":"GRATIS",
         "currency":"",
         "phone":" +1(305) 709-0744",
+        "images": ["/AnnouncementsImages/1.1.png"],
         "name":"El Bisne ",
         "category":"Otros"
     },
+
+
     {
         "id":2,
+        "title":"Tenis VANS",
+        "description":"Tenis Vans originales por encargo, llegan en 15 días a Cuba. \nDomicilio gratuito, puede escoger modelo, talla y color!!",
+        "price":"100",
+        "currency":"USD",
+        "phone":"55476042",
+        "images": ["/AnnouncementsImages/3.1.jpeg"],
+        "name":"Angel",
+        "category":"Compra y Venta"
+    },
+    {
+        "id":1,
         "title":"ChocoThay. Bombones artesanales",
         "description":"Nos especializamos en la elaboración y venta de bombones artesanales de exelente calidad, con precios de primera mano . Trabajamos por encargos para garantizar un producto fresco y puntual cumpliendo con las expectativas de cada cliente ya que todas las ofertas disponibles el cliente puede personalizarlas según su gusto y ocacion. No cobramos por adelantado, usted paga cuando recibe el producto. No pierda la oportunidad de probar nuestro delicioso chocolate , chocoThay es el lugar donde usted llega como cliente y se queda como amigo. Pedidos al WhatsApp 53316469. ",
         "price":"00",
         "currency":"CUP",
         "phone":"53316469",
-        "name":"Tahymi","category":"Compra y Venta"
-    },
-    {
-        "id":3,
-        "title":"Tenis VANS ",
-        "description":"Tenis Vans originales por encargo, llegan en 15 días a Cuba. \nDomicilio gratuito, puede escoger modelo, talla y color!!",
-        "price":"100",
-        "currency":"USD",
-        "phone":"55476042",
-        "images": ["/AnnouncementsImages/angel-vans.jpeg"],
-        "name":"Angel",
+        "images": ["/AnnouncementsImages/2.1.jpeg"],
+        "name":"Tahymi",
         "category":"Compra y Venta"
     }
-    
 ]

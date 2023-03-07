@@ -10,15 +10,19 @@ function Announcement()
     const router = useRouter()
     const {id} = router.query
     const[descrArray, setDescriptArray] = useState([])
-    useEffect(()=>(
-        setDescriptArray(announcements[id-1].description.split('\n'))
-    ),[])
+    const[Id, setId] = useState(0)
+    
+
+    useEffect(()=>{
+        setId((id > 0) ? announcements.length - id : id*(-1)-1)
+        setDescriptArray(announcements[Id].description.split('\n'))
+    },[])
         
-    var princImage = announcements[id-1] && (announcements[id-1].images === undefined ? `/${announcements[id-1].category}.png` : announcements[id-1].images[0])
+    var princImage = announcements[Id] && (announcements[Id].images === undefined ? `/${announcements[Id].category}.png` : announcements[Id].images[0])
     
      
     return(
-        announcements[id-1] !== undefined &&
+        announcements[Id] !== undefined &&
         
 
             <div className="Announcement">
@@ -30,7 +34,7 @@ function Announcement()
                     <Image className="image" src={princImage} alt="" fill/>
                 </div>
 
-                <h2 className="announcInfoLine">{announcements[id-1].title}</h2>
+                <h2 className="announcInfoLine">{announcements[Id].title}</h2>
                     {descrArray && descrArray.map(line =>(
                         <p key={line} className="announcInfoLine">{line}</p>
                     ))}
@@ -38,10 +42,10 @@ function Announcement()
                 <br/>
                 <div className="contact">
                     <p className="announcInfoLine">Contacto: </p>
-                    <a className="announcInfoLine" href={`tel:${announcements[id-1].phone}`}>{announcements[id-1].phone}</a>
+                    <a className="announcInfoLine" href={`tel:${announcements[Id].phone}`}>{announcements[Id].phone}</a>
                 </div>
 
-                <p className="price announcInfoLine">${announcements[id-1].price} {announcements[id-1].currency}</p>
+                <p className="price announcInfoLine">${announcements[Id].price} {announcements[Id].currency}</p>
             </div>
         </div>
     );
