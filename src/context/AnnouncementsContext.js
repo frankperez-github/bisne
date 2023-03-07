@@ -85,7 +85,7 @@ export const AnnouncementsContextProvider = ({children})=>{
         }
     }
     const [currAnnouncement, setCurrAnnouncement] = useState({})
-    const promotions =["/promo1.png", "/promo2.png", "/promo3.png", "/promo4.png", "/promo5.png"]
+    const promotions =["/promo1.png", "/promo2.png", "/promo3.png", "/promo4.png", "/promo5.png "]
 
     return (
     <AnnouncementsContext.Provider 
