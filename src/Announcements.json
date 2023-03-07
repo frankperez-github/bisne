@@ -10,7 +10,46 @@
         "name":"El Bisne ",
         "category":"Otros"
     },
-    
+    {   
+        "id":10,
+        "title":" ¡Oferta Especial! Spaghetti Marca Gallo de 900 gramos a solo 850 pesos cubanos",
+        "description":"Descripción*: ¡Atención amantes de la pasta! Tenemos una oferta increíble para ti. Por tiempo limitado, ofrecemos spaghetti marca Gallo de 900 gramos a solo 850 pesos cubanos. Este delicioso producto es perfecto para cualquier comida, desde un sencillo plato de spaghetti con salsa de tomate hasta platos más elaborados como lasaña o espagueti a la carbonara.\n\n*El spaghetti marca Gallo es famoso por su calidad y sabor incomparable. ¡No pierdas la oportunidad de probarlo a un precio increíblemente bajo!\n\nPara comprar, comunícate con nosotros al siguiente número de telefono:  5354418738. \n¡No esperes más para disfrutar de un plato de spaghetti delicioso y económico!*",
+        "price":"850",
+        "currency":"CUP",
+        "phone":"54418738",
+        "name":"Amy",
+        "category":"Compra y Venta"
+    },
+    {
+        "id":9,
+        "title":"🎂Todo en CAKES y BOMBONES🍫",
+        "description":"🍫 ¿QUIERES SER FELIZ? COME CHOCOLATE! 🍫\n🎂 TODO EN CAKES Y BOMBONES! \n\n😌 CALIDAD garantizada\n📝 Totalmente PERSONALIZADOS y con AGREGOS\n🎁 Perfectos para CELEBRACIONES de niños, bodas y 15.\n🍯 Chocolate, bombones, petters, trufas, paletas rellenas, corazón, flores, letras, números, 3 leches, nata, crema, mousse, caramelo, chucherías...\n💳 Buenos PRECIOS desde 2600cup\n🚗 contamos con MENSAJERÍA opcional\n✍🏼 Pedidos con 24 horas de antelación o consultar disponibilidad del día.\n\n❤️ INFO, FOTOS y ENCARGOS WhatsApp 52939109 ❤️",
+        "price":"2600",
+        "currency":"CUP",
+        "phone":"52939109",
+        "images": ["/AnnouncementsImages/9.1.jpeg"],
+        "name":"Sa Habana",
+        "category":"Compra y Venta"},
+    {
+        "id":8,
+        "title":"AEI TAXIS AGENCIA DE TAXIS",
+        "description":"SI BUSCAS UN TAXI 🚕\n_SIN DUDA SOMOS TU MEJOR OPCIÓN, CONTAMOS CON UNA AMPLIA GAMA DE SERVICIOS , ESTAMOS EN TODAS PARTES Y VAMOS A TODAS PARTES_\n \n*SERVICIOS QUE OFERTAMOS*\n-Viajes interprovinciales \n\n-Servicios rápidos dentro de la ciudad Habana\n\n-Servicios de excursiones \n\n-Servicios de entrega de paquetes\n\n👇🏻 ENLACE PARA QUE SE UNA A NUESTRO GRUPO\nhttps://chat.whatsapp.com/DB2tfkjuDaoKl6u3R9VBlA\n\n\n📱 Contacto\nhttps://wa.me/5358693268\nhttps://wa.me/5358878034",
+        "price":"100",
+        "currency":"CUP",
+        "phone":" 5368693268",
+        "name":"AEI TAXIS ",
+        "category":"Compra y Venta"
+    },
+    {
+        "id":7,
+        "title":"Productos para el hogar ",
+        "description":"Detergente líquido el 1,5lto 350$\nLejía 1lto200$\nDesengrasante 1lto 200$\nAmbientador 1lto 200$\nDesincrustante para baño 1lto 200$",
+        "price":"0",
+        "currency":"CUP",
+        "phone":"55823952",
+        "name":"Dayan",
+        "category":"Compra y Venta"
+    },
     {
         "id":6,
         "title":"Prendas de Plata Pandora",

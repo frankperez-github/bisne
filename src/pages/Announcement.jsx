@@ -1,20 +1,16 @@
 import Image from "next/image";
 import AnnouncementsContext from "@/context/AnnouncementsContext";
 import { useContext, useEffect, useState } from "react";
-import { useRouter } from "next/router";
 import ReturnBar from "@/components/ReturnBar";
 
 function Announcement()
 {
-    const {announcements} = useContext(AnnouncementsContext)
-    const router = useRouter()
-    const {id} = router.query
+    const {announcements, currAnnouncement} = useContext(AnnouncementsContext)
+    const id = currAnnouncement.id
     const[descrArray, setDescriptArray] = useState([])
-    const[Id, setId] = useState(0)
-    
+    const Id = (id > 0) ? (announcements.length - id) : (id*(-1)-1)
 
     useEffect(()=>{
-        setId((id > 0) ? announcements.length - id : id*(-1)-1)
         setDescriptArray(announcements[Id].description.split('\n'))
     },[])
         

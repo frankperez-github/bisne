@@ -84,8 +84,8 @@ export const AnnouncementsContextProvider = ({children})=>{
             else setResults(null)
         }
     }
-
-    const promotions =["/promo1.png", "/promo2.png", "/promo3.png", "/promo4.png", "/promo5.png"]
+    const [currAnnouncement, setCurrAnnouncement] = useState({})
+    const promotions =["/promo1.png", "/promo2.png", "/promo3.png", "/promo4.png", "/promo5.pngper"]
 
     return (
     <AnnouncementsContext.Provider 
@@ -99,7 +99,9 @@ export const AnnouncementsContextProvider = ({children})=>{
             Categories,
             filterCateg,
             setAnnouncements,
-            promotions
+            promotions,
+            currAnnouncement,
+            setCurrAnnouncement
         }}>
 
         {children}
