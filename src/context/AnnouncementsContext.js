@@ -86,7 +86,17 @@ export const AnnouncementsContextProvider = ({children})=>{
     }
     const [currAnnouncement, setCurrAnnouncement] = useState({})
     const promotions =["/promo1.png", "/promo2.png", "/promo3.png", "/promo4.png", "/promo5.png "]
-
+    function fixed()
+    {
+        var fixedAnn = 0
+        announcements.map(ann =>{
+            if(ann.id < 0) 
+            {
+                fixedAnn++;
+            }
+        })
+        return fixedAnn
+    }
     return (
     <AnnouncementsContext.Provider 
         value={{
@@ -101,7 +111,8 @@ export const AnnouncementsContextProvider = ({children})=>{
             setAnnouncements,
             promotions,
             currAnnouncement,
-            setCurrAnnouncement
+            setCurrAnnouncement,
+            fixed
         }}>
 
         {children}
