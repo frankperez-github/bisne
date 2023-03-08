@@ -4,41 +4,40 @@ import { useContext, useEffect, useState } from "react";
 import ReturnBar from "@/components/ReturnBar";
 import { useRouter } from "next/router";
 
-function Announcement({context})
+function Announcement()
 {
     const router = useRouter()
     const {fixed, announcements, currAnnouncement} = useContext(AnnouncementsContext)
     const id = currAnnouncement.id
     const[descrArray, setDescriptArray] = useState([])
-    const {queryId} = router.query
-    const[Announcement, setAnnouncement] = useState(currAnnouncement)
-    var Id = (id > 0) ? (announcements.length - id+fixed()) : (id*(-1)-1)
+    // const {queryId} = router.query
+    // const[Announcement, setAnnouncement] = useState(currAnnouncement)
+    const Id = (id > 0) ? (announcements.length - id+fixed()) : (id*(-1)-1);
+    ()=>setDescriptArray(announcements[id].description.split('\n'))
     
     useEffect(()=>{
-        console.log(queryId)
-        Id = (queryId > 0) ? (announcements.length - queryId+fixed()) : (queryId*(-1)-1);
-        setAnnouncement(announcements[Id])
-        setDescriptArray(currAnnouncement.description.split('\n'))
+        // Id = (queryId > 0) ? (announcements.length - queryId+fixed()) : (queryId*(-1)-1);
+        // setAnnouncement(announcements[Id])
     },[])
         
-    var princImage = currAnnouncement && (currAnnouncement.images === undefined ? `/${currAnnouncement.category}.png` : currAnnouncement.images[0])
+    var princImage = announcements[Id] && (announcements[Id].images === undefined ? `/${announcements[Id].category}.png` : announcements[Id].images[0])
     
      
     return(
-        currAnnouncement !== undefined &&
+        announcements[Id] !== undefined &&
         
 
-        <div className="currAnnouncement">
+        <div className="announcements[Id]">
 
             <ReturnBar />
 
             <div className="container">
                 
-                <div className="currAnnouncementDetailedImages">
+                <div className="AnnouncementDetailedImages">
                     <Image className="image" src={princImage} alt="" fill/>
                 </div>
 
-                <h2 className="announcInfoLine">{currAnnouncement.title}</h2>
+                <h2 className="announcInfoLine">{announcements[Id].title}</h2>
                     {descrArray && descrArray.map(line =>(
                         <p key={line} className="announcInfoLine">{line}</p>
                     ))}
@@ -46,10 +45,10 @@ function Announcement({context})
                 <br/>
                 <div className="contact">
                     <p className="announcInfoLine">Contacto: </p>
-                    <a className="announcInfoLine" href={`https://wa.me/${ currAnnouncement.phone.length == 8 ? "+53"+currAnnouncement.phone :currAnnouncement.phone}`}>{currAnnouncement.phone}</a>
+                    <a className="announcInfoLine" href={`https://wa.me/${ announcements[Id].phone.length == 8 ? "+53"+announcements[Id].phone :announcements[Id].phone}`}>{announcements[Id].phone}</a>
                 </div>
 
-                <p className="price announcInfoLine">${currAnnouncement.price} {currAnnouncement.currency}</p>
+                <p className="price announcInfoLine">${announcements[Id].price} {announcements[Id].currency}</p>
            
             </div>
 
