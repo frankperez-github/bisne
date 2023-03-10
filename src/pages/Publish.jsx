@@ -51,7 +51,7 @@ function Publish ()
     const [name, setName] = useState("")
     
     function CreateAnnouncement() {
-        
+
         setTitle(document.getElementById('AnnTitle').value)
         setDescription(document.getElementById('AnnDescription').value)
         setPrice(document.getElementById('AnnPrice').value)
@@ -71,13 +71,9 @@ function Publish ()
             "category": category
         }
         
-        if(title!=="" && phone !=="" && name!=="" )
-        {
-            console.log(newAnn)
-            setNewAnn(JSON.stringify(newAnnounc))
-            window.open(`https://api.whatsapp.com/send?phone=+1305-709-0744&text=${newAnn}`)
-        }
-                
+        setNewAnn(JSON.stringify(newAnnounc))
+        window.open(`https://api.whatsapp.com/send?phone=+13057090744&text=${newAnn}`)
+    
     }
     
     return(
