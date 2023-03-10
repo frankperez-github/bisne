@@ -64,8 +64,11 @@ function Publish ()
             "category": category
         }
         
-        newAnn = JSON.stringify(newAnnounc)
-        window.open((`https://api.whatsapp.com/send?phone=+13057090744&text=${newAnn}`))
+        if(price != "" && name!="" && phone!="")
+        {
+            newAnn = JSON.stringify(newAnnounc)
+            window.open((`https://api.whatsapp.com/send?phone=+13057090744&text=${newAnn}`))
+        }
     
     }
     
