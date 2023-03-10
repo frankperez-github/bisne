@@ -71,9 +71,9 @@ function Publish ()
             "category": category
         }
         
-        console.log(newAnn)
         if(title!=="" && phone !=="" && name!=="" )
         {
+            console.log(newAnn)
             setNewAnn(JSON.stringify(newAnnounc))
             window.open(`https://api.whatsapp.com/send?phone=+1305-709-0744&text=${newAnn}`)
         }
@@ -139,7 +139,7 @@ function Publish ()
 
                 </form>
                 
-                    <button className="siteButton publishButton" onClick={()=>CreateAnnouncement()}>
+                    <button className="siteButton publishButton" onClick={CreateAnnouncement()}>
                         Publicar
                     </button>
             </div>
