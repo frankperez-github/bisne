@@ -19,7 +19,7 @@ function Announcement()
             return
         }
         setDescrArray(announcements[Id].description.split('\n'))
-    },[id])
+    },[])
         
     var princImage = announcements[Id] && (announcements[Id].images === undefined ? `/${announcements[Id].category}.png` : announcements[Id].images[0])
     
