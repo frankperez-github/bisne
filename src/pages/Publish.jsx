@@ -68,6 +68,10 @@ function Publish ()
             newAnn = JSON.stringify(newAnnounc)
             window.open((`https://api.whatsapp.com/send?phone=+13057090744&text=${newAnn}`))
         }
+        else
+        {
+            window.alert("Debe rellenar al menos la información de contacto, título y precio")
+        }
     
     }
     
