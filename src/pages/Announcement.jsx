@@ -8,16 +8,15 @@ function Announcement()
 {
     const router = useRouter()
     const {fixed, announcements, currAnnouncement} = useContext(AnnouncementsContext)
-    const id = currAnnouncement.id
+    const {id} = router.query
     const[descrArray, setDescriptArray] = useState([])
-    // const {queryId} = router.query
     // const[Announcement, setAnnouncement] = useState(currAnnouncement)
     const Id = (id > 0) ? (announcements.length - id+fixed()) : (id*(-1)-1);
     
     useEffect(()=>{
+        console.log((id))
         // Id = (queryId > 0) ? (announcements.length - queryId+fixed()) : (queryId*(-1)-1);
         setDescriptArray(announcements[Id].description.split('\n'))
-        // setAnnouncement(announcements[Id])
     },[])
         
     var princImage = announcements[Id] && (announcements[Id].images === undefined ? `/${announcements[Id].category}.png` : announcements[Id].images[0])

@@ -72,7 +72,8 @@ function Publish ()
         }
         
         setNewAnn(JSON.stringify(newAnnounc))
-        window.open(`https://api.whatsapp.com/send?phone=+13057090744&text=${newAnn}`)
+        console.log(newAnn)
+        window.open((`https://api.whatsapp.com/send?phone=13057090744&text=${newAnn}`))
     
     }
     
