@@ -3,21 +3,24 @@ import AnnouncementsContext from "@/context/AnnouncementsContext";
 import { useContext, useEffect, useState } from "react";
 import ReturnBar from "@/components/ReturnBar";
 import { useRouter } from "next/router";
+import { useSearchParams } from "react-router-dom";
 
 function Announcement()
 {
     const router = useRouter()
-    const {fixed, announcements, currAnnouncement} = useContext(AnnouncementsContext)
-    const {id} = router.query
-    const[descrArray, setDescriptArray] = useState([])
-    // const[Announcement, setAnnouncement] = useState(currAnnouncement)
+    const {fixed, announcements} = useContext(AnnouncementsContext)
+    const { id } = router.query
+    const [descrArray, setDescrArray] = useState([])
     const Id = (id > 0) ? (announcements.length - id+fixed()) : (id*(-1)-1);
     
     useEffect(()=>{
-        console.log((id))
-        // Id = (queryId > 0) ? (announcements.length - queryId+fixed()) : (queryId*(-1)-1);
-        setDescriptArray(announcements[Id].description.split('\n'))
-    },[])
+        if(!id)
+        {
+            return
+        }
+        console.log(announcements[Id].id)
+        setDescrArray(announcements[Id].description.split('\n'))
+    },[id])
         
     var princImage = announcements[Id] && (announcements[Id].images === undefined ? `/${announcements[Id].category}.png` : announcements[Id].images[0])
     

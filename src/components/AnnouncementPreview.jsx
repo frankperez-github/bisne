@@ -1,12 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
-import { useContext } from "react";
-import AnnouncementsContext from "@/context/AnnouncementsContext";
 
 
 function AnnouncementPreview({announcement})
 {
-    const {setCurrAnnouncement} = useContext(AnnouncementsContext)
 
     var princImage = announcement.images == undefined ? `/${announcement.category}.png` : announcement.images[0]
     const imagePreview = 
@@ -16,7 +13,7 @@ function AnnouncementPreview({announcement})
     }
     return(
         <div className="">
-            <Link href={`/Announcement/?id=${announcement.id}`} onClick={()=>setCurrAnnouncement(announcement)}>
+            <Link href={`/Announcement/?id=${announcement.id}`} >
             <div className="Preview">
                     <div className="imagePreview" style={imagePreview}>
                         <Image src={princImage} fill alt="productImage"/>

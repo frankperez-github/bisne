@@ -84,7 +84,6 @@ export const AnnouncementsContextProvider = ({children})=>{
             else setResults(null)
         }
     }
-    const [currAnnouncement, setCurrAnnouncement] = useState({})
     const promotions =["/promo1.png", "/promo2.png", "/promo3.png", "/promo4.png", "/promo5.png", "/promo6.png"]
     function fixed()
     {
@@ -110,8 +109,6 @@ export const AnnouncementsContextProvider = ({children})=>{
             filterCateg,
             setAnnouncements,
             promotions,
-            currAnnouncement,
-            setCurrAnnouncement,
             fixed
         }}>
 
