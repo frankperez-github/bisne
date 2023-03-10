@@ -41,24 +41,17 @@ function Publish ()
         "Cotorro"
     ]
 
-    const [newAnn, setNewAnn] = useState("")
-    const [title, setTitle] = useState("")
-    const [description, setDescription] = useState("")
-    const [price, setPrice] = useState("0")
-    const [currency, setCurrency] = useState("USD")
-    const [category, setCategory] = useState("Compra y Venta")
-    const [phone, setPhone] = useState("")
-    const [name, setName] = useState("")
+    var newAnn = {}
     
     function CreateAnnouncement() {
-
-        setTitle(document.getElementById('AnnTitle').value)
-        setDescription(document.getElementById('AnnDescription').value)
-        setPrice(document.getElementById('AnnPrice').value)
-        setCurrency(document.getElementById('AnnCurrency').value)
-        setCategory(document.getElementById('AnnCategory').value)
-        setPhone(document.getElementById('AnnPhone').value)
-        setName(document.getElementById('AnnName').value)
+        
+        var title = document.getElementById('AnnTitle').value
+        var description  = document.getElementById('AnnDescription').value
+        var price = document.getElementById('AnnPrice').value
+        var currency  = document.getElementById('AnnCurrency').value
+        var category  = document.getElementById('AnnCategory').value
+        var phone = document.getElementById('AnnPhone').value
+        var name = document.getElementById('AnnName').value
         
         const newAnnounc = {
             "id": announcements.length+1,
@@ -71,9 +64,9 @@ function Publish ()
             "category": category
         }
         
-        setNewAnn(JSON.stringify(newAnnounc))
-        console.log(newAnn)
-        window.open((`https://api.whatsapp.com/send?phone=13057090744&text=${newAnn}`))
+        newAnn = JSON.stringify(newAnnounc)
+        console.log(JSON.stringify(newAnn))
+        window.open((`https://api.whatsapp.com/send?phone=+13057090744&text=${newAnn}`))
     
     }
     
