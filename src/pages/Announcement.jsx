@@ -15,8 +15,8 @@ function Announcement()
     const Id = (id > 0) ? (announcements.length - id+fixed()) : (id*(-1)-1);
     
     useEffect(()=>{
-        setDescriptArray(announcements[Id].description.split('\n'))
         // Id = (queryId > 0) ? (announcements.length - queryId+fixed()) : (queryId*(-1)-1);
+        setDescriptArray(announcements[Id].description.split('\n'))
         // setAnnouncement(announcements[Id])
     },[])
         
