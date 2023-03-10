@@ -139,7 +139,7 @@ function Publish ()
 
                 </form>
                 
-                    <button className="siteButton publishButton" onClick={CreateAnnouncement()}>
+                    <button className="siteButton publishButton" onClick={()=>CreateAnnouncement()}>
                         Publicar
                     </button>
             </div>
