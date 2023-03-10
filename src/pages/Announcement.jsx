@@ -18,7 +18,6 @@ function Announcement()
         {
             return
         }
-        console.log(announcements[Id].id)
         setDescrArray(announcements[Id].description.split('\n'))
     },[id])
         
