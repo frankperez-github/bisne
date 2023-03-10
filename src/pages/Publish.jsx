@@ -65,7 +65,6 @@ function Publish ()
         }
         
         newAnn = JSON.stringify(newAnnounc)
-        console.log(JSON.stringify(newAnn))
         window.open((`https://api.whatsapp.com/send?phone=+13057090744&text=${newAnn}`))
     
     }
