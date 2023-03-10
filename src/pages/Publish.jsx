@@ -41,7 +41,14 @@ function Publish ()
         "Cotorro"
     ]
 
-    var newAnn = {}
+    const [newAnn, setNewAnn] = useState("")
+    const [title, setTitle] = useState("")
+    const [description, setDescription] = useState("")
+    const [price, setPrice] = useState("0")
+    const [currency, setCurrency] = useState("USD")
+    const [category, setCategory] = useState("Compra y Venta")
+    const [phone, setPhone] = useState("")
+    const [name, setName] = useState("")
     
     function CreateAnnouncement() {
         
