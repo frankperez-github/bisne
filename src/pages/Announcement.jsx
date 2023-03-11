@@ -44,8 +44,11 @@ function Announcement()
                     ))}
 
                 <br/>
+                <div className="">
+                    <p className="announcInfoLine">Nombre: {announcements[Id].name}</p>
+                </div>
                 <div className="contact">
-                    <p className="announcInfoLine">Contacto: </p>
+                    <p className="announcInfoLine">Teléfono: </p>
                     <a className="announcInfoLine" href={`https://wa.me/${ announcements[Id].phone.length == 8 ? "+53"+announcements[Id].phone :announcements[Id].phone}`}>{announcements[Id].phone}</a>
                 </div>
 
