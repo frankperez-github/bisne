@@ -11,7 +11,7 @@ function Announcement()
     const {fixed, announcements} = useContext(AnnouncementsContext)
     const { id } = router.query
     const [descrArray, setDescrArray] = useState([])
-    const Id = (id > 0) ? (announcements.length - id+fixed()) : (id*(-1)-1);
+    const Id = (id > 0) ? (announcements.length - id+fixed()-1) : (id*(-1)-1);
     
     useEffect(()=>{
         if(!id)
