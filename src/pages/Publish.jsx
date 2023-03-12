@@ -5,7 +5,7 @@ import Titlebar from "@/components/TitleBar";
 
 function Publish ()
 {
-    const {Categories, setAnnouncements, announcements} = useContext(AnnouncementsContext);
+    const {Categories, fixed, announcements} = useContext(AnnouncementsContext);
     const Provinces = [
         "Pinar del Río",
         "Artemisa",
@@ -53,7 +53,7 @@ function Publish ()
         var name = document.getElementById('AnnName').value
         
         const newAnnounc = {
-            "id": announcements.length+1,
+            "id": announcements.length+1 - fixed(),
             "title": title,
             "description": description,
             "price": price,
