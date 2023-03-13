@@ -12,7 +12,7 @@ function Announcement()
     const { id } = router.query
     const [descrArray, setDescrArray] = useState([])
     
-    const Id = (id > 0) ? (fixed()-1 + announcements.length-1  - id) : (id*(-1)-1);
+    const Id = (id > 0) ? (fixed()-1 + announcements.length -id+1 - fixed()) : (id*(-1)-1);
     
     useEffect(()=>{
         if(!id)
