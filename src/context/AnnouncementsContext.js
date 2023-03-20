@@ -84,7 +84,7 @@ export const AnnouncementsContextProvider = ({children})=>{
             else setResults(null)
         }
     }
-    const promotions =["/promo1.png", "/promo2.png", "/promo3.png", "/promo4.png", "/promo5.png", "/promo6.png"]
+    const promotions =["/promo1.png", "/promo2.png", "/promo3.png", "/promo4.png", "/promo5.png", "/promo6.jpg"]
     function fixed()
     {
         var fixedAnn = 0
