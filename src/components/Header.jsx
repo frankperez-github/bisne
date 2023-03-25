@@ -12,9 +12,8 @@ function Header ()
         <div className="Header">
             <Link href="/" className="nameAndLogo">
                 <div className="logo">
-                    <Image className="image" src="/Logo.png" alt="logo" fill/>
+                    <Image className="image" src="/Logo.jpeg" alt="logo" fill/>
                 </div>
-                <h1>El Bisne</h1>
             </Link>
             
             <div className="searchAndBurger">

@@ -84,7 +84,8 @@ a {
 .logo
 {
   padding-top: 1%;
-  width: 25%;
+  width: 45%;
+  margin-left: 8%;
 }
 .lupa
 {
@@ -101,10 +102,8 @@ a {
 .nameAndLogo
 {
   cursor: pointer;
-  width: 45%;
+  width: 65%;
   align-items: center;
-  display: flex;
-  justify-content: left;
 }
 .searchAndBurger
 {
