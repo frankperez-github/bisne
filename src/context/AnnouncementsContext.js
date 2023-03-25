@@ -59,11 +59,17 @@ export const AnnouncementsContextProvider = ({children})=>{
         if(query !== ""){
 
             var newResults=[]
+            var words = query.split(" ")
             announcements.map(announc => {
-                if(announc.title.toLowerCase().includes(query.toLowerCase()) || 
-                    announc.description.toLowerCase().includes(query.toLowerCase())){
-                    newResults=[announc, ...newResults];
-                }
+                words.forEach(word => {
+                    if(announc.title.toLowerCase().includes(word) || 
+                        announc.description.toLowerCase().includes(word)){
+                            if(!newResults.includes(announc))
+                            {
+                                newResults=[announc, ...newResults];
+                            }
+                    }
+                });
             });
             if(newResults.length > 0) setResults(newResults);
             else setResults(null)
