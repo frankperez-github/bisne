@@ -9,7 +9,7 @@ function AnnouncementPreview({announcement})
     const imagePreview = 
     {
       position: 'relative',
-      width: '55%'
+      width: '50%'
     }
     return(
         <div className="">
