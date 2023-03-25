@@ -12,7 +12,7 @@ function ReturnBar ()
         <div className="Header">
             <Menu />
             <Link href="/" className="nameAndLogo">
-                <div className="logo">
+                <div className="backArrow">
                     <Image className="image" src="/backArrow.svg" alt="logo" fill/>
                 </div>
                 <p>Regresar al inicio</p>
