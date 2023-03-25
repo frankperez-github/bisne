@@ -11,7 +11,7 @@ function ReturnBar ()
     return(
         <div className="Header">
             <Menu />
-            <Link href="/" className="nameAndLogo">
+            <Link href="/" className="arrowAndTitle">
                 <div className="backArrow">
                     <Image className="image" src="/backArrow.svg" alt="logo" fill/>
                 </div>
