@@ -193,7 +193,16 @@ a {
   padding-top: 2%;
   color: rgb(16, 125, 16);
 }
-
+.backArrow{
+  width: 20%;
+  margin-right: 10%;
+}
+.arrowAndTitle{
+  align-items: center;
+  display: flex;
+  justify-content: left;
+  width: 50%;
+}
 .nameAndLogo p{
   text-align: center;
   margin-bottom: 2%;
