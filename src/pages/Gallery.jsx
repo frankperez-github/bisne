@@ -18,7 +18,7 @@ function Gallery() {
         <div className="">
             <Menu />
             <Header />
-            <div className="PromotionSlides">
+            {/* <div className="PromotionSlides">
             <Swiper pagination={true} loop={true} autoplay={{ delay: 5000 }} modules={[Pagination, Autoplay]} className="mySwiper">
                     {promotions.map((promoImg) => (
                         <SwiperSlide key={promoImg} className="slide">
@@ -26,7 +26,7 @@ function Gallery() {
                         </SwiperSlide>
                     ))}
                 </Swiper>
-            </div>
+            </div> */}
             {
                 announcements.map((announc) => (
                     <AnnouncementPreview key={announc.id} announcement={announc}/>
