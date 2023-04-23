@@ -5,7 +5,14 @@ import Gallery from '@/pages/Gallery';
 
 export default function Home() {
   
+  const [domLoaded, setDomLoaded] = useState(false);
+
+  useEffect(() => {
+    setDomLoaded(true);
+  }, []);
+  
   return (
+    domLoaded && 
     <>
       <Head>
         <title>El bisne</title>
