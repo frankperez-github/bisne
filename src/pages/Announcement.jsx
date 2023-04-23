@@ -3,15 +3,15 @@ import AnnouncementsContext from "@/context/AnnouncementsContext";
 import { useContext, useEffect, useState } from "react";
 import ReturnBar from "@/components/ReturnBar";
 import { useRouter } from "next/router";
-import { useSearchParams } from "react-router-dom";
 
 function Announcement()
 {
     const router = useRouter()
-    const {fixed, announcements} = useContext(AnnouncementsContext)
     const { id } = router.query
+    const {fixed, announcements} = useContext(AnnouncementsContext)
     const [descrArray, setDescrArray] = useState([])
     
+    // Negative id means fixed announcement
     const Id = (id > 0) ? (fixed()-1 + announcements.length -id+1 - fixed()) : (id*(-1)-1);
     
     useEffect(()=>{

@@ -13,7 +13,7 @@ function CategoryRow({id, name, changeCateg, setId})
             <div className="colorDot">
                 <Image alt="*" src={`${id}.svg`} fill className="image"/>
             </div>
-            <p>{name}</p>
+            {/* <p>{name}</p> */}
         </div>
     );
 }
