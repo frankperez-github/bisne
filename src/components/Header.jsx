@@ -12,7 +12,7 @@ function Header ()
         <div className="Header">
             <Link href="/" className="nameAndLogo">
                 <div className="logo">
-                    <Image className="image" src="/Logo.jpeg" alt="logo" fill/>
+                    <Image className="image" src="/logo.svg" alt="logo" fill/>
                 </div>
             </Link>
             

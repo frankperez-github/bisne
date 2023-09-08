@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2342183452345155"
-     crossorigin="anonymous"></script>
+     crossOrigin="anonymous"></script>
       <Head />
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-E7P5CSE90D"></script>
       <script dangerouslySetInnerHTML={{
