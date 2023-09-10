@@ -7,7 +7,9 @@ function AnnouncementPreview({announcement})
 {
 
     const [descriptPreview, setDescriptPreview] = useState("")
+    const [titlePreview, setTitlePreview] = useState("")
     useEffect(()=>{
+        setTitlePreview(announcement.title.toLowerCase().substring(0,20))
         setDescriptPreview(announcement.description.toLowerCase().substring(0,90))
     },[])
     var princImage = announcement.images == undefined ? `/${announcement.category}.png` : announcement.images[0]
@@ -24,7 +26,7 @@ function AnnouncementPreview({announcement})
                         <Image src={princImage} fill alt="productImage" className="imagePreview"/>
                     </div>
                     <div className="announcInfo">
-                        <h3 className="name darkGreen">{announcement.title}</h3>
+                        <h3 className="name darkGreen">{titlePreview}...</h3>
                         <p className="description">{
                             descriptPreview+"..."
                         }</p>
@@ -40,15 +42,6 @@ function AnnouncementPreview({announcement})
                     </div>
                 </div>
             </Link>
-
-            {announcement.id % 10 == 0 && 
-                <button className="siteButton whappButton">
-                    <a href="https://chat.whatsapp.com/EjRu8T8wrWq1HQ59rZm421">
-                        Ingresa a nuestro grupo de WhatsApp
-                    </a>
-                </button>
-            }
-            
             
         </div>
     );

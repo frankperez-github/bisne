@@ -5,7 +5,7 @@ import Announcements from "../Announcements.json";
 export const AnnouncementsContextProvider = ({children})=>{
 
     const[menu, setMenu] = useState(false);
-    const menuIcons = ["cart.svg", "star.svg", "edit.svg", "paper.svg", "person.svg", "stonks.svg"];
+    const menuIcons = ["categories.svg", "star.svg", "edit.svg", "paper.svg", "person.svg", "stonks.svg"];
     
     const [announcements, setAnnouncements] = useState(Announcements)
     

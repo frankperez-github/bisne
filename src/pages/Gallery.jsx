@@ -4,7 +4,7 @@ import AnnouncementPreview from "@/components/AnnouncementPreview";
 import Header from "@/components/Header";
 import Menu from "@/components/Menu";
 import AnnouncementsContext from "@/context/AnnouncementsContext";
-import { useContext, useEffect } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -28,9 +28,36 @@ function Gallery() {
                 </Swiper>
             </div>
             {
-                announcements.map((announc) => (
-                    <AnnouncementPreview key={announc.id} announcement={announc}/>
-                ))
+                announcements.map((announc, index) => {
+                    if (index === 3)
+                    {
+                        return(
+                            <button className="leftButton mediumButton">
+                                <div className="buttonImage">
+                                    <Image src="yellowStar.svg" fill className="image"/>
+                                </div>
+                                <a href="https://chat.whatsapp.com/EjRu8T8wrWq1HQ59rZm421">
+                                    Los más populares
+                                </a>
+                            </button>
+                        )
+                    }
+                    if (index===7) {
+                        return(
+                            <button className="rightButton mediumButton">
+                                <div className="buttonImage">
+                                    <Image src="message.svg" fill className="image"/>
+                                </div>
+                                <a href="https://chat.whatsapp.com/EjRu8T8wrWq1HQ59rZm421">
+                                    Unirme al grupo
+                                </a>
+                            </button>
+                        )   
+                    }
+                    return(
+                        <AnnouncementPreview key={announc.id} announcement={announc}/>
+                    )
+                })
             }
         </div>
     );
