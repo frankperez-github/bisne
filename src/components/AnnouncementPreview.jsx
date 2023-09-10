@@ -23,7 +23,7 @@ function AnnouncementPreview({announcement})
             <Link href={`/Announcement/?id=${announcement.id}`} >
                 <div className="Preview">
                     <div className="imagePreview" style={imagePreview}>
-                        <Image src={princImage} fill alt="productImage" className="imagePreview"/>
+                        <Image alt=""src={princImage} fill alt="productImage" className="imagePreview"/>
                     </div>
                     <div className="announcInfo">
                         <h3 className="name darkGreen">{titlePreview}...</h3>
@@ -34,7 +34,7 @@ function AnnouncementPreview({announcement})
                             <p className="lightGreen">{announcement.category}</p>
                             <div className="stars">
                                 <div className="star">
-                                    <Image src="yellowStar.svg" fill className="image"/>
+                                    <Image alt=""src="yellowStar.svg" fill className="image"/>
                                 </div>
                                 <p>{announcement.stars}</p>
                             </div>

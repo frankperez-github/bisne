@@ -12,19 +12,19 @@ function Header ()
         <div className="Header">
             <Link href="/" className="nameAndLogo">
                 <div className="logo">
-                    <Image className="image" src="/logo.svg" alt="logo" fill/>
+                    <Image alt=""className="image" src="/logo.svg" alt="logo" fill/>
                 </div>
             </Link>
             
             <div className="searchAndBurger">
                 <Link href="/Search" className="lupa">
-                    <Image className="image"  src="/lupa.svg" alt="lupa" fill/>
+                    <Image alt=""className="image"  src="/lupa.svg" alt="lupa" fill/>
                 </Link>
                 <div className="burger" onClick={()=>setMenu(true)}>
-                    <Image className="image"  src="/more.svg" alt="burger" fill/>
+                    <Image alt=""className="image"  src="/more.svg" alt="burger" fill/>
                 </div>
                 <Link href="/Publish" className="floatingButton">
-                    <Image className="image"  src="/floatingButton.svg" alt="burger" fill/>
+                    <Image alt=""className="image"  src="/floatingButton.svg" alt="burger" fill/>
                 </Link>
             </div>
 

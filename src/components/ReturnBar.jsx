@@ -13,14 +13,14 @@ function ReturnBar ()
             <Menu />
             <Link href="/" className="arrowAndTitle">
                 <div className="backArrow">
-                    <Image className="image" src="/backArrow.svg" alt="logo" fill/>
+                    <Image alt=""className="image" src="/backArrow.svg" alt="logo" fill/>
                 </div>
                 <p>Regresar al inicio</p>
             </Link>
             
             <div className="searchAndBurger">
                 <div className="burger" onClick={()=>setMenu(true)}>
-                    <Image className="image"  src="/more.svg" alt="burger" fill/>
+                    <Image alt=""className="image"  src="/more.svg" alt="burger" fill/>
                 </div>
             </div>
         </div>

@@ -36,7 +36,7 @@ function Announcement()
             <div className="container">
                 
                 <div className="AnnouncementDetailedImages">
-                    <Image className="image" src={princImage} alt="" fill/>
+                    <Image alt=""className="image" src={princImage} alt="" fill/>
                 </div>
 
                 <h2 className="announcInfoLine">{announcements[Id].title}</h2>
