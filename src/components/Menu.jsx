@@ -14,30 +14,30 @@ function Menu()
 
             <div className="menu">
                 <div className="row">
-                    <Image alt=""onClick={()=>setMenu(false)} alt="" src="backArrow.svg" width={20} height={20} />
+                    <Image onClick={()=>setMenu(false)} alt="" src="/backArrow.svg" width={20} height={20} />
                 </div>
                 <Link href="/Categories" className="row" onClick={()=>setMenu(false)}>
-                    <Image alt="" src="categories.svg" alt="" width={20} height={20} />
+                    <Image src="/categories.svg" alt="" width={20} height={20} />
                     <p>Categorias</p>
                 </Link>
                 <Link href="https://www.addtoany.com/share" className="row" onClick={()=>(setMenu(false), navigator.share("www.google.com"))}>
-                    <Image alt="" src="star.svg" alt="" width={20} height={20} />
+                    <Image  src="/star.svg" alt="" width={20} height={20} />
                     <p>Invitar amigos</p>
                 </Link >
                 <Link href="/Publish" className="row" onClick={()=>setMenu(false)}>
-                    <Image alt="" src="edit.svg" alt="" width={20} height={20} />
+                    <Image  src="/edit.svg" alt="" width={20} height={20} />
                     <p>Publicar anuncio</p>
                 </Link>
                 <Link href="/Terms&Conditions" className="row" onClick={()=>setMenu(false)}>
-                    <Image alt="" src="paper.svg" alt="" width={20} height={20} />
+                    <Image src="/paper.svg" alt="" width={20} height={20} />
                     <p>Condiciones de uso</p>
                 </Link>
                 <Link href="/ContactTeam" className="row" onClick={()=>setMenu(false)}>
-                    <Image alt="" src="person.svg" alt="" width={20} height={20} />
+                    <Image src="/person.svg" alt="" width={20} height={20} />
                     <p>Contactar desarrolladores</p>
                 </Link>
                 <Link href="Promotion" className="row" onClick={()=>setMenu(false)}>
-                    <Image alt="" src="stonks.svg" alt="" width={20} height={20} />
+                    <Image src="/stonks.svg" alt="" width={20} height={20} />
                     <p>Promocionarse</p>
                 </Link>
 

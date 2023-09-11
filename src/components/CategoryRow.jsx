@@ -11,7 +11,7 @@ function CategoryRow({id, name, changeCateg, setId})
     return(
         <div className="categoryRow"  onClick={handleCategorySelect} >
             <div className="colorDot">
-                <Image alt="*" src={`${id}.svg`} fill className="image"/>
+                <Image alt="*" src={`${id}.svg`} fill  sizes=""className="image"/>
             </div>
             <p>{name}</p>
         </div>

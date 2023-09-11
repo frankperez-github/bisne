@@ -41,7 +41,7 @@ function Categories ()
         <div className="">
             <ReturnBar />
                 <div className="colorDot relativeDot">
-                    <Image alt=""src={`${id}.svg`} alt="" fill className="image"/>
+                    <Image alt=""src={`${id}.svg`} fill className="image"/>
                 </div>
                 <select name="" id="" onChange={handleChange}>
                     {Categories.map((categ)=>

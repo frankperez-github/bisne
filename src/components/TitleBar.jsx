@@ -4,7 +4,7 @@ function Titlebar({title, icon}) {
     return(
         <div className="TitleBar">
             <div className="titleIcon">
-                <Image alt=""src={icon} alt="" fill className="image"/>
+                <Image alt=""src={icon}  fill className="image"/>
             </div>
             <h3>{title}</h3>
         </div>

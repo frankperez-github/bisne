@@ -37,6 +37,7 @@ a {
 }
 .Header
 {
+  margin-top: -5%;
   background-color: white;
   padding: 0;
   display: flex;

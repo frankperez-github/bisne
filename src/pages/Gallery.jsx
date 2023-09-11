@@ -34,7 +34,7 @@ function Gallery() {
                         return(
                             <button key={index+"leftButton"} className="leftButton mediumButton">
                                 <div className="buttonImage">
-                                    <Image alt="" src="yellowStar.svg" fill className="image"/>
+                                    <Image alt="" src="yellowStar.svg" fill  sizes=""className="image"/>
                                 </div>
                                 <a href="https://chat.whatsapp.com/EjRu8T8wrWq1HQ59rZm421">
                                     Los más populares
@@ -46,7 +46,7 @@ function Gallery() {
                         return(
                             <button key={index+"righButton"} className="rightButton mediumButton">
                                 <div className="buttonImage">
-                                    <Image alt="" src="message.svg" fill className="image"/>
+                                    <Image alt="" src="message.svg" fill  sizes=""className="image"/>
                                 </div>
                                 <a href="https://chat.whatsapp.com/EjRu8T8wrWq1HQ59rZm421">
                                     Unirme al grupo
